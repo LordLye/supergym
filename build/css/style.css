@@ -575,7 +575,7 @@ button,
 }
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 15px;
   }
 }
 
@@ -1286,6 +1286,11 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1199px) {
+  .header__header {
+    margin-bottom: 20px;
+  }
+}
 
 .header__link-logo {
   display: -webkit-box;
@@ -1344,8 +1349,8 @@ button,
 .intro {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 396px 1fr;
-  grid-template-columns: 396px 1fr;
+  -ms-grid-columns: 0.57fr 1fr;
+  grid-template-columns: 0.57fr 1fr;
   -webkit-column-gap: 5.5%;
      -moz-column-gap: 5.5%;
           column-gap: 5.5%;
@@ -1377,8 +1382,8 @@ button,
   padding-top: 87px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1.8fr;
-  grid-template-columns: 1fr 1.8fr;
+  -ms-grid-columns: minmax(120px, 1fr) 1.8fr;
+  grid-template-columns: minmax(120px, 1fr) 1.8fr;
   row-gap: 17px;
 }
 @media (max-width: 1199px) {
@@ -1386,7 +1391,7 @@ button,
     -ms-grid-row-align: start;
     -ms-grid-column-align: end;
     place-self: start end;
-    max-width: 400px;
+    width: 100%;
     min-width: 324px;
     padding-top: 50px;
     row-gap: 7px;
@@ -1399,10 +1404,10 @@ button,
     -ms-grid-row-align: stretch;
     -ms-grid-column-align: stretch;
     place-self: stretch;
-    -ms-grid-columns: auto 290px auto;
-    grid-template-columns: auto 290px auto;
+    -ms-grid-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr auto;
     padding-top: 49px;
-    row-gap: 14px;
+    row-gap: 13px;
   }
 }
 .intro__description p {
@@ -1463,10 +1468,15 @@ button,
 }
 @media (max-width: 1199px) {
   .intro__description h1 {
-    max-width: 215px;
+    max-width: 346px;
     font-size: 72px;
     line-height: 86px;
     text-transform: none;
+  }
+}
+@media (max-width: 767px) {
+  .intro__description h1 {
+    max-width: 78%;
   }
 }
 .intro__description ul {
@@ -1477,23 +1487,23 @@ button,
   -ms-grid-row-span: 3;
   grid-row: 2/5;
   -ms-grid-row-align: center;
-  -ms-grid-column-align: start;
-  place-self: center start;
+  -ms-grid-column-align: end;
+  place-self: center end;
   margin: 0;
   padding: 0;
   padding-bottom: 40px;
   list-style-type: none;
   color: #ffffff;
-  -webkit-transform: translateX(20px);
-      -ms-transform: translateX(20px);
-          transform: translateX(20px);
+  -webkit-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 @media (max-width: 1199px) {
   .intro__description ul {
-    padding-bottom: 35px;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    padding-bottom: 40px;
+    -webkit-transform: translateX(-8px);
+        -ms-transform: translateX(-8px);
+            transform: translateX(-8px);
   }
 }
 @media (max-width: 767px) {
@@ -1507,9 +1517,13 @@ button,
     -ms-grid-row-align: start;
     -ms-grid-column-align: start;
     place-self: start start;
+    -webkit-transform: translateX(-2px);
+        -ms-transform: translateX(-2px);
+            transform: translateX(-2px);
     min-width: 113px;
     padding-bottom: 0;
     padding-top: 77px;
+    max-width: 18%;
   }
 }
 .intro__description li {
@@ -1519,6 +1533,15 @@ button,
 }
 
 .intro__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-row-align: start;
   -ms-grid-column-align: end;
   place-self: start end;
@@ -1527,13 +1550,12 @@ button,
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  width: 100%;
-  max-width: 234px;
+  width: 91%;
   margin: 0;
   margin-top: 30px;
   color: #ffffff;
   border: 4px solid #ffffff;
-  padding: 19px 54px;
+  padding: 19px 30px;
   letter-spacing: 0.05em;
   font-weight: 700;
   font-size: 12px;
@@ -1542,9 +1564,9 @@ button,
 }
 @media (max-width: 1199px) {
   .intro__button {
+    width: 92%;
     margin-top: 28px;
-    max-width: 187px;
-    padding: 24px 31px;
+    padding: 20px 30px;
     -webkit-transform: translateX(2px);
         -ms-transform: translateX(2px);
             transform: translateX(2px);

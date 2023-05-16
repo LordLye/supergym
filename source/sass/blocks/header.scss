@@ -22,6 +22,10 @@
 .header__header {
   display: flex;
   justify-content: space-between;
+
+  @include vp-1199 {
+    margin-bottom: 20px;
+  }
 }
 
 .header__link-logo {
