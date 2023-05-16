@@ -42,7 +42,8 @@
                 srcset="./img/intro-tablet.webp 1x, ./img/intro-tablet@2x.webp 2x">
               <source type="image/webp" srcset="./img/intro-desktop.webp 1x, ./img/intro-desktop@2x.webp 2x">
               <source media="(max-width: 1199px)" srcset="./img/intro-tablet.jpg 1x, ./img/intro-tablet@2x.jpg 2x">
-              <img src="../img/intro-desktop.jpg" alt="Мужчина с буквой S на футболке, как у супермэна." width="500" height="556" srcset="./img/intro-desktop@2x.jpg 2x">
+              <img src="../img/intro-desktop.jpg" alt="Мужчина с буквой S на футболке, как у супермэна." width="500"
+                height="556" srcset="./img/intro-desktop@2x.jpg 2x">
             </picture>
           </div>
         </section>
@@ -57,8 +58,73 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container"></div>
+
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__nav nav">
+          <h2 class="visually-hidden">Меню навигации по сайту</h2>
+          <ul class="nav__list">
+            <li class="nav__logo">
+              <a class="nav__logo-link" href="index.html">
+                <svg width="88" height="32" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Абонементы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Акции</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Тренеры</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Расписание</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__social">
+          <h2 class="visually-hidden">Наши социальные сети</h2>
+          <ul class="footer__social-list social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">
+                  Вконтакте
+                </span>
+                <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">
+                  Одноклассниках
+                </span>
+                <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">
+                  Реддит
+                </span>
+                <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </div>
 
