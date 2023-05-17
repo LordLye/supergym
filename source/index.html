@@ -39,11 +39,11 @@
           <div class="intro__image">
             <picture>
               <source type="image/webp" media="(max-width: 1199px)"
-                srcset="./img/intro-tablet.webp 1x, ./img/intro-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/intro-desktop.webp 1x, ./img/intro-desktop@2x.webp 2x">
-              <source media="(max-width: 1199px)" srcset="./img/intro-tablet.jpg 1x, ./img/intro-tablet@2x.jpg 2x">
+                srcset="../img/intro-tablet.webp 1x, ../img/intro-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="../img/intro-desktop.webp 1x, ../img/intro-desktop@2x.webp 2x">
+              <source media="(max-width: 1199px)" srcset="../img/intro-tablet.jpg 1x, ../img/intro-tablet@2x.jpg 2x">
               <img src="../img/intro-desktop.jpg" alt="Мужчина с буквой S на футболке, как у супермэна." width="500"
-                height="556" srcset="./img/intro-desktop@2x.jpg 2x">
+                height="556" srcset="../img/intro-desktop@2x.jpg 2x">
             </picture>
           </div>
         </section>
@@ -52,10 +52,45 @@
 
 
     <main>
-      <section class="intro">
-        <div class="container">
-
+      <section class="gym">
+        <div class="container gym__container">
+          <div class="gym__description">
+            <h2 class="title title--smaller">Тренажерный зал</h2>
+            <strong>Просторный зал площадью 900&nbsp;кв/м</strong>
+            <p>Supergym&nbsp;– самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В&nbsp;зале расположены отдельная зона для Crossfit и кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+          <div class="gym__image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-room-mobile.webp 1x, img/gym-room-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-room-tablet.webp 1x, img/gym-room-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gym-room-desktop.webp 1x, img/gym-room-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/gym-room-mobile.jpg 1x, img/gym-room-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/gym-room-tablet.jpg 1x, img/gym-room-tablet@2x.jpg 2x">
+              <img src="img/gym-room-desktop.jpg" width="660" height="401" alt="Светлый тренажерный зал."
+              srcset="img/gym-room-desktop@2x.jpg 2x">
+            </picture>
+          </div>
+          <div class="gym__video" data-video-block>
+            <div class="gym__video-img" data-video-cover>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="../img/video-img-mobile.webp 1x, ../img/video-img-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="../img/video-img.webp 1x, ../img/video-img@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="../img/video-img-mobile.jpg 1x, ../img/video-img-mobile@2x.jpg 2x">
+                <img src="../img/video-img.jpg" width="364" height="228" alt="Тренажерный зал c велотренажерами."
+                srcset="../img/video-img@2x.jpg 2x">
+              </picture>
+              <button class="gym__video-button" data-video-button>
+                <span class="visually-hidden">Включить видео</span>
+                <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#triangle"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="gym__video-yt" id="player" data-video-container data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1"></div>
+          </div>
         </div>
+
       </section>
     </main>
 
