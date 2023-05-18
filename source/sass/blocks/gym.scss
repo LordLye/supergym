@@ -30,6 +30,7 @@
   top: 408px;
   left: 39.54%;
   width: 26.65%;
+  max-width: 364px;
 
   @include vp-1199 {
     top: 587px;
@@ -43,6 +44,10 @@
     top: 0;
     width: 100%;
     position: relative;
+  }
+
+  @media (min-width: 1366px) {
+    left: calc(50% - 140px);
   }
 }
 
