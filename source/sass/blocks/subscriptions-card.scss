@@ -4,6 +4,17 @@
   gap: 53px;
   padding: 0 7px 0 7px;
   list-style-type: none;
+
+  @include vp-1199 {
+    width: 65%;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 52px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .subscriptions-card__item {
@@ -15,11 +26,21 @@
   gap: 5px;
   position: relative;
 
+  @include vp-767 {
+    padding: 44px 35px;
+  }
+
   & h3 {
     font-weight: 700;
     font-size: 26px;
     line-height: 29px;
     margin: 0 0 6px 0;
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 24px;
+      margin-bottom: 4px;
+    }
   }
 
   & small {
@@ -27,6 +48,10 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 58px;
+
+    @include vp-767 {
+      margin-bottom: 48px;
+    }
   }
 
   &::after {
@@ -51,11 +76,16 @@
 }
 
 .subscriptions-card__price {
+  position: relative;
   margin: 0 0 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
+
+  @include vp-767 {
+    margin-bottom: 26px;
+  }
 
   & span {
     font-weight: 700;
@@ -63,6 +93,45 @@
     line-height: 90px;
     color: $color-egyptian-blue;
     margin: 0;
+    z-index: 2;
+
+    @include vp-767 {
+      font-size: 48px;
+      line-height: 72px;
+      transform: translateX(2px);
+    }
+  }
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    bottom: -5px;
+    display: block;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 150px;
+    color: $color-whisper;
+    opacity: 0.48;
+
+    @include vp-1199 {
+      bottom: -5px;
+    }
+
+    @include vp-767 {
+      font-size: 80px;
+      line-height: 120px;
+    }
+  }
+
+  & svg {
+    z-index: 2;
+    width: 30px;
+    height: 42px;
+
+    @include vp-767 {
+      width: 24px;
+      height: 33px;
+    }
   }
 }
 
@@ -79,4 +148,12 @@
   padding: 26px 20px 26px 20px;
   margin: 0 auto;
   width: 100%;
+
+  @include vp-1199 {
+    width: 74%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
 }

@@ -2064,6 +2064,16 @@ button,
   position: relative;
   background-color: #f8f9fc;
 }
+@media (max-width: 1199px) {
+  .subscriptions {
+    padding: 102px 0 80px 0;
+  }
+}
+@media (max-width: 767px) {
+  .subscriptions {
+    padding: 64px 0 70px 0;
+  }
+}
 
 .subscriptions__title {
   font-family: "Alumni Sans", "Arial", sans-serif;
@@ -2074,11 +2084,42 @@ button,
   margin: 0;
   text-align: center;
 }
+@media (max-width: 1199px) {
+  .subscriptions__title {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 4px;
+    -webkit-transform: translateX(-8px);
+        -ms-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+@media (max-width: 767px) {
+  .subscriptions__title {
+    font-size: 32px;
+    line-height: 38px;
+    -webkit-transform: translateX(-6px);
+        -ms-transform: translateX(-6px);
+            transform: translateX(-6px);
+  }
+}
 
 .subscriptions__fitness-pancakes {
   position: absolute;
   top: 507px;
   right: 0;
+  width: 290px;
+}
+@media (max-width: 1199px) {
+  .subscriptions__fitness-pancakes {
+    top: 1460px;
+    width: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .subscriptions__fitness-pancakes {
+    display: none;
+  }
 }
 
 .tabs {
@@ -2107,15 +2148,16 @@ button,
 }
 @media (max-width: 1199px) {
   .tabs__controls {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 767px) {
   .tabs__controls {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-bottom: 11px;
+    padding-bottom: 2px;
     margin-bottom: 41px;
+    padding-right: 2px;
   }
 }
 .tabs__controls::after {
@@ -2192,7 +2234,7 @@ button,
 }
 @media (max-width: 767px) {
   .tabs__control.is-active::after {
-    bottom: -11px;
+    bottom: -2px;
     width: calc(100% + 7px);
   }
 }
@@ -2224,6 +2266,20 @@ button,
   padding: 0 7px 0 7px;
   list-style-type: none;
 }
+@media (max-width: 1199px) {
+  .subscriptions-card {
+    width: 65%;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 52px;
+  }
+}
+@media (max-width: 767px) {
+  .subscriptions-card {
+    width: 100%;
+  }
+}
 
 .subscriptions-card__item {
   text-align: center;
@@ -2239,17 +2295,34 @@ button,
   gap: 5px;
   position: relative;
 }
+@media (max-width: 767px) {
+  .subscriptions-card__item {
+    padding: 44px 35px;
+  }
+}
 .subscriptions-card__item h3 {
   font-weight: 700;
   font-size: 26px;
   line-height: 29px;
   margin: 0 0 6px 0;
 }
+@media (max-width: 767px) {
+  .subscriptions-card__item h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+}
 .subscriptions-card__item small {
   display: block;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 58px;
+}
+@media (max-width: 767px) {
+  .subscriptions-card__item small {
+    margin-bottom: 48px;
+  }
 }
 .subscriptions-card__item::after {
   content: "";
@@ -2268,6 +2341,7 @@ button,
 }
 
 .subscriptions-card__price {
+  position: relative;
   margin: 0 0 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2280,12 +2354,60 @@ button,
           align-items: center;
   gap: 12px;
 }
+@media (max-width: 767px) {
+  .subscriptions-card__price {
+    margin-bottom: 26px;
+  }
+}
 .subscriptions-card__price span {
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
   color: #103aae;
   margin: 0;
+  z-index: 2;
+}
+@media (max-width: 767px) {
+  .subscriptions-card__price span {
+    font-size: 48px;
+    line-height: 72px;
+    -webkit-transform: translateX(2px);
+        -ms-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+}
+.subscriptions-card__price::before {
+  content: attr(data-price);
+  position: absolute;
+  bottom: -5px;
+  display: block;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+  color: #e8e8e8;
+  opacity: 0.48;
+}
+@media (max-width: 1199px) {
+  .subscriptions-card__price::before {
+    bottom: -5px;
+  }
+}
+@media (max-width: 767px) {
+  .subscriptions-card__price::before {
+    font-size: 80px;
+    line-height: 120px;
+  }
+}
+.subscriptions-card__price svg {
+  z-index: 2;
+  width: 30px;
+  height: 42px;
+}
+@media (max-width: 767px) {
+  .subscriptions-card__price svg {
+    width: 24px;
+    height: 33px;
+  }
 }
 
 .subscriptions-card__button {
@@ -2307,6 +2429,16 @@ button,
   padding: 26px 20px 26px 20px;
   margin: 0 auto;
   width: 100%;
+}
+@media (max-width: 1199px) {
+  .subscriptions-card__button {
+    width: 74%;
+  }
+}
+@media (max-width: 767px) {
+  .subscriptions-card__button {
+    width: 100%;
+  }
 }
 
 .button {
