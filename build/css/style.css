@@ -2060,13 +2060,13 @@ button,
 }
 
 .subscriptions {
-  padding: 120px 0 120px 0;
+  padding: 120px 0 125px 0;
   position: relative;
   background-color: #f8f9fc;
 }
 @media (max-width: 1199px) {
   .subscriptions {
-    padding: 102px 0 80px 0;
+    padding: 102px 0 104px 0;
   }
 }
 @media (max-width: 767px) {
@@ -2518,6 +2518,280 @@ button,
 }
 .button:active {
   opacity: 0.5;
+}
+
+.super-games {
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+@media (max-width: 1199px) {
+  .super-games {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .super-games {
+    padding-top: 80px;
+  }
+}
+
+.super-games__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.32fr;
+  grid-template-columns: 1fr 1.32fr;
+}
+@media (max-width: 767px) {
+  .super-games__container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.super-games__image {
+  -ms-grid-row-align: stretch;
+  -ms-grid-column-align: stretch;
+  place-self: stretch;
+  position: relative;
+  width: 100%;
+  background-color: #000145;
+}
+.super-games__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #000145;
+}
+
+.super-games__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-grid-row-align: stretch;
+  -ms-grid-column-align: stretch;
+  place-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+  background-color: #ed0233;
+}
+@media (max-width: 767px) {
+  .super-games__wrapper {
+    min-height: 292px;
+  }
+}
+
+.super-games__description {
+  width: 69.5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.18fr 1fr;
+  grid-template-columns: 2.18fr 1fr;
+  -ms-grid-rows: -webkit-min-content;
+  -ms-grid-rows: min-content;
+  grid-template-rows: -webkit-min-content;
+  grid-template-rows: min-content;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 10px;
+  color: #ffffff;
+}
+@media (max-width: 1199px) {
+  .super-games__description {
+    row-gap: 0;
+    -webkit-column-gap: 22px;
+       -moz-column-gap: 22px;
+            column-gap: 22px;
+  }
+}
+.super-games__description h2 {
+  -ms-grid-row-align: start;
+  -ms-grid-column-align: start;
+  place-self: start start;
+  margin: 0;
+  padding: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 79px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  -webkit-transform: translateX(-3px);
+      -ms-transform: translateX(-3px);
+          transform: translateX(-3px);
+}
+@media (max-width: 1199px) {
+  .super-games__description h2 {
+    max-width: 120px;
+    margin-left: 10px;
+    font-size: 48px;
+    line-height: 46px;
+    text-align: left;
+  }
+}
+.super-games__description p {
+  margin: 0;
+  padding: 0;
+  padding-left: 2px;
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+@media (max-width: 1199px) {
+  .super-games__description p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .super-games__description p {
+    padding-left: 0;
+  }
+}
+.super-games__description dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row-align: start;
+  -ms-grid-column-align: center;
+  place-self: start center;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+.super-games__description dt {
+  position: relative;
+  margin: 0;
+  margin-bottom: 3px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 150%;
+}
+@media (max-width: 1199px) {
+  .super-games__description dt {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}
+.super-games__description dd {
+  position: relative;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.super-games__description dd::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+}
+.super-games__description span {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+@media (max-width: 1199px) {
+  .super-games__description span {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+.super-games__description small {
+  margin-left: 7px;
+  font-size: 14px;
+  line-height: 150%;
+}
+@media (max-width: 1199px) {
+  .super-games__description small {
+    margin-left: 4px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.super-games__date {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (max-width: 1199px) {
+  .super-games__date {
+    margin-bottom: 5px;
+  }
+}
+.super-games__date:last-of-type {
+  margin-bottom: 0;
+}
+
+.super-games__button {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  margin-top: 36px;
+  padding: 28px;
+  -ms-grid-row-align: start;
+  -ms-grid-column-align: center;
+  place-self: start center;
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .super-games__button {
+    margin-top: 27px;
+    padding: 15px;
+    font-size: 10px;
+    line-height: 12px;
+    -webkit-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  .super-games__button::after {
+    border-width: 2px;
+  }
+}
+@media (hover: hover) {
+  .super-games__button:hover:not(.focus-visible) {
+    outline: 4px solid #ffffff;
+    outline-offset: -4px;
+  }
+}
+.super-games__button.focus-visible:focus {
+  outline: 4px solid #ffffff;
+  outline-offset: -4px;
+}
+.super-games__button.focus-visible:focus {
+  outline: 4px solid #ffffff, 1px solid #003eb7;
+  outline-offset: -4px, 4px;
 }
 
 /* @mixin hover-focus {
