@@ -1,0 +1,62 @@
+.button {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 24px;
+
+  font-family: $ff-Roboto-Condensed;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  background: transparent;
+  color: $color-default-white;
+  border: none;
+  box-shadow: none;
+  appearance: none;
+  cursor: pointer;
+  /* stylelint-disable-next-line */
+  -webkit-user-select: none;
+  user-select: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 4px solid $color-default-white;
+  }
+
+  @include hover-focus {
+    color: $color-default-white;
+    background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+    border: none;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &--secondary {
+    color: $color-sapphire;
+    padding: 26px 0 26px 0;
+
+    &::after {
+      border: 3px solid $color-sapphire;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

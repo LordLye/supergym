@@ -39,11 +39,11 @@
           <div class="intro__image">
             <picture>
               <source type="image/webp" media="(max-width: 1199px)"
-                srcset="./img/intro-tablet.webp 1x, ./img/intro-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/intro-desktop.webp 1x, ./img/intro-desktop@2x.webp 2x">
-              <source media="(max-width: 1199px)" srcset="./img/intro-tablet.jpg 1x, ./img/intro-tablet@2x.jpg 2x">
+                srcset="../img/intro-tablet.webp 1x, ../img/intro-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="../img/intro-desktop.webp 1x, ../img/intro-desktop@2x.webp 2x">
+              <source media="(max-width: 1199px)" srcset="../img/intro-tablet.jpg 1x, ../img/intro-tablet@2x.jpg 2x">
               <img src="../img/intro-desktop.jpg" alt="Мужчина с буквой S на футболке, как у супермэна." width="500"
-                height="556" srcset="./img/intro-desktop@2x.jpg 2x">
+                height="556" srcset="../img/intro-desktop@2x.jpg 2x">
             </picture>
           </div>
         </section>
@@ -52,9 +52,201 @@
 
 
     <main>
-      <section class="intro">
-        <div class="container">
+      <section class="gym">
+        <div class="container gym__container">
+          <div class="gym__description">
+            <h2 class="title title--smaller">Тренажерный зал</h2>
+            <strong>Просторный зал площадью 900&nbsp;кв/м</strong>
+            <p>Supergym&nbsp;– самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+              и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p>В&nbsp;зале расположены отдельная зона для Crossfit и кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+              в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+          <div class="gym__image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/gym-room-mobile.webp 1x, img/gym-room-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="img/gym-room-tablet.webp 1x, img/gym-room-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gym-room-desktop.webp 1x, img/gym-room-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/gym-room-mobile.jpg 1x, img/gym-room-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/gym-room-tablet.jpg 1x, img/gym-room-tablet@2x.jpg 2x">
+              <img src="img/gym-room-desktop.jpg" width="660" height="401" alt="Светлый тренажерный зал."
+                srcset="img/gym-room-desktop@2x.jpg 2x">
+            </picture>
+          </div>
+          <div class="gym__video" data-video-block>
+            <div class="gym__video-img" data-video-cover>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="../img/video-img-mobile.webp 1x, ../img/video-img-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="../img/video-img.webp 1x, ../img/video-img@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="../img/video-img-mobile.jpg 1x, ../img/video-img-mobile@2x.jpg 2x">
+                <img src="../img/video-img.jpg" width="364" height="228" alt="Тренажерный зал c велотренажерами."
+                  srcset="../img/video-img@2x.jpg 2x">
+              </picture>
+              <button class="gym__video-button" data-video-button>
+                <span class="visually-hidden">Включить видео</span>
+                <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#triangle"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="gym__video-yt" id="player" data-video-container
+              data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1"></div>
+          </div>
+        </div>
+      </section>
 
+      <section class="subscriptions" id="section-subscriptions">
+        <div class="container">
+          <h2 class="subscriptions__title">Абонементы</h2>
+          <div class="subscriptions__tabs tabs" data-tabs="parent">
+            <div class="tabs__controls">
+              <button class="tabs__control is-active" type="button" data-tabs="control" data-content="1">1
+                месяц</button>
+              <button class="tabs__control" type="button" data-tabs="control" data-content="6">6 месяцев</button>
+              <button class="tabs__control" type="button" data-tabs="control" data-content="12">12 месяцев</button>
+            </div>
+            <ul class="tabs__content">
+              <li class="tabs__element is-active" data-tabs="element" data-element-content="1">
+                <ul class="subscriptions__card-list subscriptions-card">
+                  <li class="subscriptions-card__item" tabindex="0">
+                    <h3>С тренером</h3>
+                    <small>12 занятий</small>
+                    <p class="subscriptions-card__price" data-price="5000">
+                      <span>5000</span>
+                      <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#ru-value"></use>
+                      </svg>
+                    </p>
+
+                    <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
+                  </li>
+                  <li class="subscriptions-card__item" tabindex="0">
+                    <h3>Дневной</h3>
+                    <small>с 8:00 до 17:00</small>
+                    <p class="subscriptions-card__price" data-price="1700">
+                      <span>1700</span>
+                      <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#ru-value"></use>
+                      </svg>
+                    </p>
+
+                    <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
+                  </li>
+                  <li class="subscriptions-card__item" tabindex="0">
+                    <h3>Полный день</h3>
+                    <small>с 8:00 до 22:00</small>
+                    <p class="subscriptions-card__price" data-price="2700">
+                      <span>2700</span>
+                      <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#ru-value"></use>
+                      </svg>
+                    </p>
+
+                    <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="tabs__element" data-tabs="element" data-element-content="6">
+                <ul class="subscriptions__card-list subscriptions-card">
+                  <li class="subscriptions-card__item" tabindex="0">
+                    <h3>С тренером</h3>
+                    <small>72 занятия</small>
+                    <p class="subscriptions-card__price" data-price="24000">
+                      <span>22500</span>
+                      <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#ru-value"></use>
+                      </svg>
+                    </p>
+
+                    <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
+                  </li>
+                  <li class="subscriptions-card__item" tabindex="0">
+                    <h3>Дневной</h3>
+                    <small>с 8:00 до 17:00</small>
+                    <p class="subscriptions-card__price" data-price="8200">
+                      <span>7700</span>
+                      <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#ru-value"></use>
+                      </svg>
+                    </p>
+
+                    <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
+                  </li>
+                  <li class="subscriptions-card__item" tabindex="0">
+                    <h3>Полный день</h3>
+                    <small>с 8:00 до 22:00</small>
+                    <p class="subscriptions-card__price" data-price="13000">
+                      <span>12000</span>
+                      <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#ru-value"></use>
+                      </svg>
+                    </p>
+
+                    <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="tabs__element" data-tabs="element" data-element-content="12">
+                <ul class="subscriptions__card-list subscriptions-card">
+                  <li class="subscriptions-card__item" tabindex="0">
+                    <h3>С тренером</h3>
+                    <small>144 занятия</small>
+                    <p class="subscriptions-card__price" data-price="40000">
+                      <span>38900</span>
+                      <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#ru-value"></use>
+                      </svg>
+                    </p>
+
+                    <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
+                  </li>
+                  <li class="subscriptions-card__item" tabindex="0">
+                    <h3>Дневной</h3>
+                    <small>с 8:00 до 17:00</small>
+                    <p class="subscriptions-card__price" data-price="13700">
+                      <span>12500</span>
+                      <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#ru-value"></use>
+                      </svg>
+                    </p>
+
+                    <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
+                  </li>
+                  <li class="subscriptions-card__item" tabindex="0">
+                    <h3>Полный день</h3>
+                    <small>с 8:00 до 22:00</small>
+                    <p class="subscriptions-card__price" data-price="22000">
+                      <span>20900</span>
+                      <svg width="30" height="42" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#ru-value"></use>
+                      </svg>
+                    </p>
+
+                    <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="subscriptions__fitness-pancakes-wrapper">
+          <picture>
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="./img/fitness-pancakes-tablet.webp 1x, ./img/fitness-pancakes-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="./img/fitness-pancakes-desktop.webp 1x, ./img/fitness-pancakes-desktop@2x.webp 2x">
+            <source media="(max-width: 1199px)"
+              srcset="./img/fitness-pancakes-tablet.png 1x, ./img/fitness-pancakes-tablet@2x.png 2x">
+
+            <img class="subscriptions__fitness-pancakes" src="./img/fitness-pancakes-desktop.png" alt="Гимнастические блины" width="321"
+              height="384" srcset="./img/fitness-pancakes-desktop@2x.png">
+          </picture>
         </div>
       </section>
     </main>

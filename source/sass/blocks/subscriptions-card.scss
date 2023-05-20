@@ -1,0 +1,159 @@
+.subscriptions-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 53px;
+  padding: 0 7px 0 7px;
+  list-style-type: none;
+
+  @include vp-1199 {
+    width: 65%;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 52px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.subscriptions-card__item {
+  text-align: center;
+  padding: 56px 71px 62px 71px;
+  background-color: $color-default-white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+
+  @include vp-767 {
+    padding: 44px 35px;
+  }
+
+  & h3 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    margin: 0 0 6px 0;
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 24px;
+      margin-bottom: 4px;
+    }
+  }
+
+  & small {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 58px;
+
+    @include vp-767 {
+      margin-bottom: 48px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -7px;
+    left: -7px;
+    display: block;
+    width: calc(100% + 14px);
+    height: calc(100% + 14px);
+    background-color: $color-default-white;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    &::after {
+      background: linear-gradient(135deg, $color-crimson 0, $color-smalt 100%);
+    }
+  }
+}
+
+.subscriptions-card__price {
+  position: relative;
+  margin: 0 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  @include vp-767 {
+    margin-bottom: 26px;
+  }
+
+  & span {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90px;
+    color: $color-egyptian-blue;
+    margin: 0;
+    z-index: 2;
+
+    @include vp-767 {
+      font-size: 48px;
+      line-height: 72px;
+      transform: translateX(2px);
+    }
+  }
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    bottom: -5px;
+    display: block;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 150px;
+    color: $color-whisper;
+    opacity: 0.48;
+
+    @include vp-1199 {
+      bottom: -5px;
+    }
+
+    @include vp-767 {
+      font-size: 80px;
+      line-height: 120px;
+    }
+  }
+
+  & svg {
+    z-index: 2;
+    width: 30px;
+    height: 42px;
+
+    @include vp-767 {
+      width: 24px;
+      height: 33px;
+    }
+  }
+}
+
+.subscriptions-card__button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid #102654;
+  padding: 26px 20px 26px 20px;
+  margin: 0 auto;
+  width: 100%;
+
+  @include vp-1199 {
+    width: 74%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
