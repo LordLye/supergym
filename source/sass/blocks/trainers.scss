@@ -1,4 +1,4 @@
-.staff {
+.trainers {
   padding: 0;
   padding-top: 75px;
   padding-bottom: 105px;
@@ -48,7 +48,7 @@
   }
 }
 
-.staff__slider {
+.trainers__slider {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -62,14 +62,14 @@
   }
 }
 
-.staff__list {
+.trainers__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 
 }
 
-.staff__item {
+.trainers__item {
   width: 22.42%;
 
   @include vp-1199 {
@@ -86,7 +86,7 @@
   }
 }
 
-.staff__slider-buttons {
+.trainers__slider-buttons {
   position: absolute;
   z-index: 0;
   top: 50%;
@@ -100,7 +100,7 @@
 }
 
 
-.staff__slider-button {
+.trainers__slider-button {
   position: relative;
   z-index: 100;
   display: flex;
@@ -198,11 +198,11 @@
   }
 }
 
-.staff__item-top {
+.trainers__item-top {
   width: 100%;
 }
 
-.staff__item-top>div {
+.trainers__item-top>div {
   position: relative;
   width: 100%;
   padding-bottom: 113.05%;
@@ -216,7 +216,7 @@
   }
 }
 
-.staff__item-top>div>div {
+.trainers__item-top>div>div {
   position: absolute;
   width: 100%;
   height: 100%;

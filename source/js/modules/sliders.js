@@ -1,16 +1,16 @@
 /* global Swiper */
-const staffSliderElement = document.querySelector('.staff__slider');
+const trainersSliderElement = document.querySelector('.trainers__slider');
 
 function addTabindex() {
-  const originalSlides = document.querySelectorAll('.staff__item:not(.swiper-slide-duplicate)');
+  const originalSlides = document.querySelectorAll('.trainers__item:not(.swiper-slide-duplicate)');
   for (let i = 0; i < originalSlides.length; i++) {
-    originalSlides[i].querySelector('.staff-card').setAttribute('tabindex', '0');
+    originalSlides[i].querySelector('.trainers-card').setAttribute('tabindex', '0');
   }
 }
 
 const initSliders = () => {
-  if (staffSliderElement) {
-    const staffSlider = new Swiper('.staff__slider', {
+  if (trainersSliderElement) {
+    const trainersSlider = new Swiper('.trainers__slider', {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 'auto',
@@ -48,13 +48,13 @@ const initSliders = () => {
               if (active.parentElement.classList.contains('swiper-slide-active')) {
                 const parentSlideIndex = active.parentElement.dataset.swiperSlideIndex;
                 if (parentSlideIndex > 0) {
-                  staffSlider.slidePrev(100, true);
+                  trainersSlider.slidePrev(100, true);
                 }
               }
             } else if (!evt.shiftKey && evt.key === 'Tab') {
               const active = document.activeElement;
               if (active.parentElement.classList.contains('swiper-slide-next')) {
-                staffSlider.slideNext(100, true);
+                trainersSlider.slideNext(100, true);
               }
             }
           });
@@ -62,8 +62,8 @@ const initSliders = () => {
       },
       // Navigation arrows
       navigation: {
-        nextEl: '.staff__slider-button--next',
-        prevEl: '.staff__slider-button--prev',
+        nextEl: '.trainers__slider-button--next',
+        prevEl: '.trainers__slider-button--prev',
       },
     });
   }
