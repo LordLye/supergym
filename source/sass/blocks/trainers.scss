@@ -1,0 +1,223 @@
+.trainers {
+  padding: 0;
+  padding-top: 75px;
+  padding-bottom: 105px;
+
+  @include vp-1199 {
+    padding-top: 70px;
+    padding-bottom: 62px;
+  }
+
+  @include vp-767 {
+    padding-top: 34px;
+    padding-bottom: 38px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  h2 {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $vp-1366;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    padding: 0 30px 0 105px;
+    font-family: $ff-Alumni-Sans;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+
+    @include vp-1199 {
+      padding: 0 45px;
+      margin-bottom: 32px;
+      text-align: center;
+      transform: translateX(-3px);
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @include vp-767 {
+      padding: 0 15px;
+      margin-bottom: 42px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+}
+
+.trainers__slider {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+
+  @include vp-1199 {
+    width: calc(100% - 112px);
+  }
+
+  @include vp-767 {
+    width: calc(100% - 44px);
+  }
+}
+
+.trainers__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.trainers__item {
+  width: 22.42%;
+
+  @include vp-1199 {
+    width: 47.35%;
+  }
+
+  @include vp-767 {
+    width: 91.87%;
+  }
+
+  &:hover,
+  &:focus-within {
+    border: 2px solid $color-gamboge;
+  }
+}
+
+.trainers__slider-buttons {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.trainers__slider-button {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10% 0;
+  top: 0;
+  margin: auto 0;
+  width: 20px;
+  height: 40px;
+  background: transparent;
+  color: $color-dark-grey;
+  border: none;
+
+  @include vp-1199 {
+    padding: 19% 0;
+  }
+
+  @include vp-767 {
+    padding: 42% 0;
+
+    svg {
+      width: 12px;
+      height: 21px;
+    }
+  }
+
+  & svg {
+    visibility: hidden;
+  }
+
+  &--prev {
+    left: 46px;
+
+    @include vp-1199 {
+      left: 43px;
+    }
+
+    @include vp-767 {
+      left: 10px;
+    }
+
+    &::after {
+      font-size: 32px;
+      transform: translate(-3px, -2px);
+
+      @include vp-1199 {
+        transform: translate(-2px, -1px);
+      }
+
+      @include vp-767 {
+        font-size: 19px;
+        transform: translate(-6px, 0);
+      }
+    }
+  }
+
+  &--next {
+    right: 46px;
+    transform: translateY(4px);
+
+    @include vp-1199 {
+      right: 43px;
+      transform: translateY(0);
+    }
+
+    @include vp-767 {
+      right: 10px;
+      transform: translateY(0);
+    }
+
+    &::after {
+      font-size: 32px;
+      transform: translate(-2px, -7px);
+
+      @include vp-1199 {
+        transform: translate(-2px, -0px);
+      }
+
+      @include vp-767 {
+        font-size: 19px;
+        transform: translate(-6px, 0);
+      }
+    }
+  }
+
+  @include hover-focus {
+    filter: drop-shadow(0 0 4px $color-cobalt-number);
+    color: $color-cobalt-number;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.trainers__item-top {
+  width: 100%;
+}
+
+.trainers__item-top>div {
+  position: relative;
+  width: 100%;
+  padding-bottom: 113.05%;
+
+  @include vp-1199 {
+    padding-bottom: 110%;
+  }
+
+  @include vp-767 {
+    padding-bottom: 121.24%;
+  }
+}
+
+.trainers__item-top>div>div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

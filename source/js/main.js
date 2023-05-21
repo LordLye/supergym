@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initVideos} from './modules/video';
 import {initTabs} from './modules/tabs';
+import {initSliders} from './modules/sliders';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initVideos();
     initTabs();
+    initSliders();
     initModals();
     const form = new Form();
     window.form = form;
