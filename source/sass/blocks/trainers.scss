@@ -1,16 +1,16 @@
 .trainers {
   padding: 0;
   padding-top: 75px;
-  padding-bottom: 105px;
+  padding-bottom: 140px;
 
   @include vp-1199 {
     padding-top: 70px;
-    padding-bottom: 62px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
     padding-top: 34px;
-    padding-bottom: 38px;
+    padding-bottom: 70px;
   }
 
   .container {
@@ -122,19 +122,24 @@
 
   @include vp-767 {
     padding: 42% 0;
-
-    svg {
-      width: 12px;
-      height: 21px;
-    }
   }
 
-  & svg {
-    visibility: hidden;
+  svg {
+    width: 16px;
+    height: 32px;
+
+    @include vp-767 {
+      width: 10px;
+      height: 19px;
+    }
   }
 
   &--prev {
     left: 46px;
+
+    svg {
+      transform: rotate(180deg);
+    }
 
     @include vp-1199 {
       left: 43px;
@@ -161,16 +166,13 @@
 
   &--next {
     right: 46px;
-    transform: translateY(4px);
 
     @include vp-1199 {
       right: 43px;
-      transform: translateY(0);
     }
 
     @include vp-767 {
       right: 10px;
-      transform: translateY(0);
     }
 
     &::after {
