@@ -112,8 +112,7 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: inherit;
-
-    transform: translate(-5px, 5px);
+    transform: translate(-5px, 4px);
 
     @include vp-1199 {
       transform: translate(-5px, 3px);
@@ -127,7 +126,7 @@
       content: "";
       position: absolute;
       left: 5px;
-      bottom: 5px;
+      bottom: 4px;
       display: block;
       width: 88%;
       height: 1px;
@@ -141,7 +140,7 @@
     @include hover-focus {
       color: $color-default-white;
       background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
-
+      outline: none;
 
       &::after {
         background-color: $color-default-white;

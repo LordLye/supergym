@@ -14,7 +14,7 @@
 
   @include vp-1199 {
     width: 93%;
-    padding: 54px 60px 50px 65px;
+    padding: 54px 62px 50px 65px;
   }
 
   @include vp-767 {
@@ -55,7 +55,7 @@
     @include vp-767 {
       text-align: center;
       grid-column: span 2;
-      max-height: 178px;
+      max-height: 185px;
     }
 
     &::-webkit-scrollbar {

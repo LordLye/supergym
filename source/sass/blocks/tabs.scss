@@ -68,8 +68,17 @@
     margin-right: 0;
   }
 
-  @include hover-focus {
-    color: $color-sapphire;
+  &:hover{
+    color: rgba($color-sapphire, 0.9)
+  }
+
+  &:active{
+    opacity: 0.7;
+  }
+
+  @include focus {
+    box-shadow: 0 0 0 3px $color-gamboge;
+    outline: none;
   }
 
   &:disabled {

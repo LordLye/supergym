@@ -77,6 +77,18 @@
 
   @include vp-1199 {
     padding: 0;
+
+    &:nth-child(4n) {
+      & p {
+        transform: translateY(2px);
+      }
+    }
+
+    &:nth-child(5n) {
+      & p {
+        transform: translateY(2px);
+      }
+    }
   }
 
   @include vp-767 {
@@ -84,6 +96,18 @@
     flex-direction: column;
     align-items: center;
     max-width: 72%;
+
+    &:nth-child(4n) {
+      & p {
+        transform: translateY(0);
+      }
+    }
+
+    &:nth-child(5n) {
+      & p {
+        transform: translateY(0);
+      }
+    }
   }
 
   dl {
