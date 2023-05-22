@@ -115,5 +115,18 @@
     &:focus+span {
       opacity: 1;
     }
+
+    &:hover {
+      background:rgba(255, 255, 255, 0.1);
+    }
+
+    @include focus {
+      box-shadow: 0 0 0 3px $color-gamboge;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
   }
 }

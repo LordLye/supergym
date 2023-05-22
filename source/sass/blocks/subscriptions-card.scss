@@ -69,8 +69,12 @@
   &:hover,
   &:focus,
   &:focus-within {
+    outline: none;
+
     &::after {
       background: linear-gradient(135deg, $color-crimson 0, $color-smalt 100%);
+      outline: none;
+      box-shadow: none;
     }
   }
 }

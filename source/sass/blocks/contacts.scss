@@ -143,12 +143,17 @@
       padding-top: 5px;
     }
 
-    @include hover-focus {
-      color: $color-crimson;
+    &:hover {
+      opacity: 0.8;
     }
 
     &:active {
       opacity: 0.5;
+    }
+
+    @include focus {
+      box-shadow: 0 0 0 3px $color-gamboge;
+      outline: none;
     }
   }
 

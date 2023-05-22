@@ -37,7 +37,20 @@
     border: 4px solid $color-default-white;
   }
 
-  @include hover-focus {
+  &:hover {
+    color: $color-default-white;
+    background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+    border: none;
+    outline: none;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include focus {
+    box-shadow: 0 0 0 3px $color-gamboge;
+    outline: none;
     color: $color-default-white;
     background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
     border: none;
