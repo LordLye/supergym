@@ -6,8 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Фитнес-центр города Омск">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" href="./img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <title>Supergym</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="./fonts/alumni-sans-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/alumni-sans-bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/alumni-sans-semi-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/alumni-sans-semi-bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/alumni-sans-extra-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/alumni-sans-extra-bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/robotocondensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/robotocondensed-bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/robotocondensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/robotocondensed-light.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/robotocondensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/robotocondensed-regular.woff" type="font/woff" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -19,6 +39,7 @@
             <svg class="header__logo" width="122" height="44" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#logo"></use>
             </svg>
+            <span class="visually-hidden">Логотип SUPERGYM.</span>
           </a>
           <div class="header__link-wrapper">
             <a class="header__link" href="tel:88005555555">8-800-555-55-55</a>
@@ -34,7 +55,7 @@
               <li>Групповые занятия</li>
               <li>Кардио-зона</li>
             </ul>
-            <a class="button intro__button" href="">Купить абонемент</a>
+            <a class="button intro__button" href="#subscriptions">Купить абонемент</a>
           </div>
           <div class="intro__image">
             <picture>
@@ -42,14 +63,13 @@
                 srcset="./img/intro-tablet.webp 1x, ./img/intro-tablet@2x.webp 2x">
               <source type="image/webp" srcset="./img/intro-desktop.webp 1x, ./img/intro-desktop@2x.webp 2x">
               <source media="(max-width: 1199px)" srcset="./img/intro-tablet.jpg 1x, ./img/intro-tablet@2x.jpg 2x">
-              <img src="./img/intro-desktop.jpg" alt="Мужчина с буквой S на футболке, как у супермэна." width="500"
-                height="556" srcset="./img/intro-desktop@2x.jpg 2x">
+              <img src="./img/intro-desktop.jpg" alt="Мужчина с буквой S на футболке, как у супермена." width="500"
+                height="556" srcset="./img/intro-desktop@2x.jpg 2x" loading="lazy">
             </picture>
           </div>
         </section>
       </div>
     </div>
-
 
     <main>
       <section class="gym">
@@ -66,14 +86,15 @@
           <div class="gym__image">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/gym-room-mobile.webp 1x, img/gym-room-mobile@2x.webp 2x">
+                srcset="./img/gym-room-mobile.webp 1x, ./img/gym-room-mobile@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1199px)"
-                srcset="img/gym-room-tablet.webp 1x, img/gym-room-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/gym-room-desktop.webp 1x, img/gym-room-desktop@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/gym-room-mobile.jpg 1x, img/gym-room-mobile@2x.jpg 2x">
-              <source media="(max-width: 1199px)" srcset="img/gym-room-tablet.jpg 1x, img/gym-room-tablet@2x.jpg 2x">
-              <img src="img/gym-room-desktop.jpg" width="660" height="401" alt="Светлый тренажерный зал."
-                srcset="img/gym-room-desktop@2x.jpg 2x">
+                srcset="./img/gym-room-tablet.webp 1x, ./img/gym-room-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/gym-room-desktop.webp 1x, ./img/gym-room-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="./img/gym-room-mobile.jpg 1x, ./img/gym-room-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)"
+                srcset="./img/gym-room-tablet.jpg 1x, ./img/gym-room-tablet@2x.jpg 2x">
+              <img src="./img/gym-room-desktop.jpg" width="660" height="401" alt="Светлый тренажерный зал."
+                srcset="./img/gym-room-desktop@2x.jpg 2x" loading="lazy">
             </picture>
           </div>
           <div class="gym__video" data-video-block>
@@ -85,7 +106,7 @@
                 <source media="(max-width: 767px)"
                   srcset="./img/video-img-mobile.jpg 1x, ./img/video-img-mobile@2x.jpg 2x">
                 <img src="./img/video-img.jpg" width="364" height="228" alt="Тренажерный зал c велотренажерами."
-                  srcset="./img/video-img@2x.jpg 2x">
+                  srcset="./img/video-img@2x.jpg 2x" loading="lazy">
               </picture>
               <button class="gym__video-button" data-video-button>
                 <span class="visually-hidden">Включить видео</span>
@@ -100,7 +121,7 @@
         </div>
       </section>
 
-      <section class="subscriptions" id="section-subscriptions">
+      <section class="subscriptions" id="subscriptions">
         <div class="container">
           <h2 class="subscriptions__title">Абонементы</h2>
           <div class="subscriptions__tabs tabs" data-tabs="parent">
@@ -122,7 +143,6 @@
                         <use xlink:href="img/sprite.svg#ru-value"></use>
                       </svg>
                     </p>
-
                     <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
                   </li>
                   <li class="subscriptions-card__item" tabindex="0">
@@ -134,7 +154,6 @@
                         <use xlink:href="img/sprite.svg#ru-value"></use>
                       </svg>
                     </p>
-
                     <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
                   </li>
                   <li class="subscriptions-card__item" tabindex="0">
@@ -146,7 +165,6 @@
                         <use xlink:href="img/sprite.svg#ru-value"></use>
                       </svg>
                     </p>
-
                     <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
                   </li>
                 </ul>
@@ -162,7 +180,6 @@
                         <use xlink:href="img/sprite.svg#ru-value"></use>
                       </svg>
                     </p>
-
                     <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
                   </li>
                   <li class="subscriptions-card__item" tabindex="0">
@@ -174,7 +191,6 @@
                         <use xlink:href="img/sprite.svg#ru-value"></use>
                       </svg>
                     </p>
-
                     <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
                   </li>
                   <li class="subscriptions-card__item" tabindex="0">
@@ -186,12 +202,10 @@
                         <use xlink:href="img/sprite.svg#ru-value"></use>
                       </svg>
                     </p>
-
                     <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
                   </li>
                 </ul>
               </li>
-
               <li class="tabs__element" data-tabs="element" data-element-content="12">
                 <ul class="subscriptions__card-list subscriptions-card">
                   <li class="subscriptions-card__item" tabindex="0">
@@ -203,7 +217,6 @@
                         <use xlink:href="img/sprite.svg#ru-value"></use>
                       </svg>
                     </p>
-
                     <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
                   </li>
                   <li class="subscriptions-card__item" tabindex="0">
@@ -215,7 +228,6 @@
                         <use xlink:href="img/sprite.svg#ru-value"></use>
                       </svg>
                     </p>
-
                     <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
                   </li>
                   <li class="subscriptions-card__item" tabindex="0">
@@ -227,7 +239,6 @@
                         <use xlink:href="img/sprite.svg#ru-value"></use>
                       </svg>
                     </p>
-
                     <a class="button button--secondary subscriptions-card__button" href="#">купить абонемент</a>
                   </li>
                 </ul>
@@ -243,9 +254,9 @@
               srcset="./img/fitness-pancakes-desktop.webp 1x, ./img/fitness-pancakes-desktop@2x.webp 2x">
             <source media="(max-width: 1199px)"
               srcset="./img/fitness-pancakes-tablet.png 1x, ./img/fitness-pancakes-tablet@2x.png 2x">
-
             <img class="subscriptions__fitness-pancakes" src="./img/fitness-pancakes-desktop.png"
-              alt="Гимнастические блины" width="321" height="384" srcset="./img/fitness-pancakes-desktop@2x.png">
+              alt="Гимнастические блины" width="321" height="384" srcset="./img/fitness-pancakes-desktop@2x.png"
+              loading="lazy">
           </picture>
         </div>
       </section>
@@ -271,7 +282,7 @@
                 </div>
               </dl>
               <p>Ежегодные соревнования по CrossFit</p>
-              <a href="#" class="button super-games__button">заполнить заявку</a>
+              <a class="button super-games__button" href="#">заполнить заявку</a>
             </div>
           </div>
           <div class="super-games__image">
@@ -286,13 +297,14 @@
                 srcset="./img/super-games-mobile.jpg 1x, ./img/super-games-mobile@2x.jpg 2x">
               <source media="(max-width: 1199px)"
                 srcset="./img/super-games-tablet.jpg 1x, ./img/super-games-tablet@2x.jpg 2x">
-              <img src="./img/super-games-desktop.jpg" alt="Атлет купается в облаках магнезии." width="660" height="500"
-                loading="lazy" srcset="./img/super-games-desktop@2x.jpg 2x">
+              <img src="./img/super-games-desktop.jpg"
+                alt="Спортсмен ударяет рукой в пол и поднимает в воздух облако магнезии." width="660" height="500"
+                srcset="./img/super-games-desktop@2x.jpg 2x" loading="lazy">
             </picture>
           </div>
         </div>
       </section>
-      <section class="trainers">
+      <section class="trainers" id="trainers">
         <h2 class="trainers__title">Тренеры</h2>
         <div class="container">
           <div class="trainers__slider swiper">
@@ -305,7 +317,7 @@
                         <picture>
                           <source type="image/webp" srcset="./img/anna-pavlova.webp 1x, ./img/anna-pavlova@2x.webp 2x">
                           <img src="./img/anna-pavlova.jpg" alt="Молодая девушка в красной толстовке." width="260"
-                            height="294" loading="lazy" srcset="./img/anna-pavlova@2x.jpg 2x">
+                            height="294" srcset="./img/anna-pavlova@2x.jpg 2x" loading="lazy">
                         </picture>
                       </div>
                       <div class="trainers-card__description">
@@ -323,7 +335,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="trainers__item swiper-slide">
                 <div class="trainers__item-top">
                   <div>
@@ -331,8 +342,8 @@
                       <div class="trainers-card__image">
                         <picture>
                           <source type="image/webp" srcset="./img/alex-lavrov.webp 1x, ./img/alex-lavrov@2x.webp 2x">
-                          <img src="./img/alex-lavrov.jpg" alt="Парень с бородой." width="260" height="294"
-                            loading="lazy" srcset="./img/alex-lavrov@2x.jpg 2x">
+                          <img src="./img/alex-lavrov.jpg" alt="Улыбающийся парень с бородой." width="260" height="294"
+                            srcset="./img/alex-lavrov@2x.jpg 2x" loading="lazy">
                         </picture>
                       </div>
                       <div class="trainers-card__description">
@@ -350,7 +361,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="trainers__item swiper-slide">
                 <div class="trainers__item-top">
                   <div>
@@ -359,7 +369,7 @@
                         <picture>
                           <source type="image/webp" srcset="./img/alex-pashkov.webp 1x, ./img/alex-pashkov@2x.webp 2x">
                           <img src="./img/alex-pashkov.jpg" alt="Накаченный парень в черной футболке." width="260"
-                            height="294" loading="lazy" srcset="./img/alex-pashkov@2x.jpg 2x">
+                            height="294" srcset="./img/alex-pashkov@2x.jpg 2x" loading="lazy">
                         </picture>
                       </div>
                       <div class="trainers-card__description">
@@ -377,7 +387,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="trainers__item swiper-slide">
                 <div class="trainers__item-top">
                   <div>
@@ -386,7 +395,7 @@
                         <picture>
                           <source type="image/webp" srcset="./img/mary-ketova.webp 1x, ./img/mary-ketova@2x.webp 2x">
                           <img src="./img/mary-ketova.jpg" alt="Девушка с черными длинными волосами." width="260"
-                            height="294" loading="lazy" srcset="./img/mary-ketova@2x.jpg 2x">
+                            height="294" srcset="./img/mary-ketova@2x.jpg 2x" loading="lazy">
                         </picture>
                       </div>
                       <div class="trainers-card__description">
@@ -404,7 +413,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="trainers__item swiper-slide">
                 <div class="trainers__item-top">
                   <div>
@@ -413,7 +421,7 @@
                         <picture>
                           <source type="image/webp" srcset="./img/anna-pavlova.webp 1x, ./img/anna-pavlova@2x.webp 2x">
                           <img src="./img/anna-pavlova.jpg" alt="Молодая девушка в красной толстовке." width="260"
-                            height="294" loading="lazy" srcset="./img/anna-pavlova@2x.jpg 2x">
+                            height="294" srcset="./img/anna-pavlova@2x.jpg 2x" loading="lazy">
                         </picture>
                       </div>
                       <div class="trainers-card__description">
@@ -431,7 +439,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="trainers__item swiper-slide">
                 <div class="trainers__item-top">
                   <div>
@@ -440,7 +447,7 @@
                         <picture>
                           <source type="image/webp" srcset="./img/anna-pavlova.webp 1x, ./img/anna-pavlova@2x.webp 2x">
                           <img src="./img/anna-pavlova.jpg" alt="Молодая девушка в красной толстовке." width="260"
-                            height="294" loading="lazy" srcset="./img/anna-pavlova@2x.jpg 2x">
+                            height="294" srcset="./img/anna-pavlova@2x.jpg 2x" loading="lazy">
                         </picture>
                       </div>
                       <div class="trainers-card__description">
@@ -458,7 +465,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="trainers__item swiper-slide">
                 <div class="trainers__item-top">
                   <div>
@@ -467,7 +473,7 @@
                         <picture>
                           <source type="image/webp" srcset="./img/anna-pavlova.webp 1x, ./img/anna-pavlova@2x.webp 2x">
                           <img src="./img/anna-pavlova.jpg" alt="Молодая девушка в красной толстовке." width="260"
-                            height="294" loading="lazy" srcset="./img/anna-pavlova@2x.jpg 2x">
+                            height="294" srcset="./img/anna-pavlova@2x.jpg 2x" loading="lazy">
                         </picture>
                       </div>
                       <div class="trainers-card__description">
@@ -485,7 +491,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="trainers__item swiper-slide">
                 <div class="trainers__item-top">
                   <div>
@@ -494,7 +499,7 @@
                         <picture>
                           <source type="image/webp" srcset="./img/anna-pavlova.webp 1x, ./img/anna-pavlova@2x.webp 2x">
                           <img src="./img/anna-pavlova.jpg" alt="Молодая девушка в красной толстовке." width="260"
-                            height="294" loading="lazy" srcset="./img/anna-pavlova@2x.jpg 2x">
+                            height="294" srcset="./img/anna-pavlova@2x.jpg 2x" loading="lazy">
                         </picture>
                       </div>
                       <div class="trainers-card__description">
@@ -514,16 +519,15 @@
               </div>
             </div>
           </div>
-
           <div class="trainers__slider-buttons">
             <button class="swiper-button-prev trainers__slider-button trainers__slider-button--prev" type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
+              <span class="visually-hidden">Предыдущий тренер</span>
               <svg width="16" height="32" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#arrow-right"></use>
               </svg>
             </button>
             <button class="swiper-button-next trainers__slider-button trainers__slider-button--next" type="button">
-              <span class="visually-hidden">Следующий слайд</span>
+              <span class="visually-hidden">Следующий тренер</span>
               <svg width="16" height="32" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#arrow-right"></use>
               </svg>
@@ -546,7 +550,6 @@
                 <p>Занимайтесь без очередей и&nbsp;толпучки</p>
               </div>
             </li>
-
             <li class="advantages__item">
               <dl>
                 <dt>70 </dt>
@@ -557,7 +560,6 @@
                 <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
               </div>
             </li>
-
             <li class="advantages__item advantages__item--center">
               <dl>
                 <dt>100</dt>
@@ -565,7 +567,6 @@
               </dl>
               <h3>Современные тренажеры на&nbsp;все группы мышц</h3>
             </li>
-
             <li class="advantages__item">
               <dl>
                 <dt>350</dt>
@@ -576,7 +577,6 @@
                 <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
               </div>
             </li>
-
             <li class="advantages__item">
               <dl>
                 <dt>5+</dt>
@@ -591,7 +591,7 @@
         </div>
       </section>
 
-      <section class="promotion">
+      <section class="promotion" id="promotion">
         <div class="container">
           <h2 class="promotion__title">Акции</h2>
           <ul class="promotion__list">
@@ -618,7 +618,7 @@
                     srcset="./img/promotion-girl-tablet.jpg 1x, ./img/promotion-girl-tablet@2x.jpg 2x">
                   <img src="./img/promotion-girl-desktop.jpg"
                     alt="Вид снизу на спортивную девушку в синей форме на фоне неба." width="280" height="462"
-                    loading="lazy" srcset="./img/promotion-girl-desktop@2x.jpg 2x">
+                    srcset="./img/promotion-girl-desktop@2x.jpg 2x" loading="lazy">
                 </picture>
               </div>
             </li>
@@ -646,8 +646,8 @@
                   <picture>
                     <source type="image/webp"
                       srcset="./img/reviews-anna-orlova.webp 1x, ./img/reviews-anna-orlova@2x.webp 2x">
-                    <img src="./img/reviews-anna-orlova.png" alt="Портрет клиентки Анны." width="80" height="80"
-                      loading="lazy" srcset="./img/reviews-anna-orlova@2x.png 2x">
+                    <img src="./img/reviews-anna-orlova.png" alt="Фото клиентки Анны Орловой." width="80" height="80"
+                      srcset="./img/reviews-anna-orlova@2x.png 2x" loading="lazy">
                   </picture>
                 </div>
                 <h3>Анна Орлова</h3>
@@ -655,15 +655,14 @@
                   обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&raquo;</p>
               </div>
             </div>
-
             <div class="reviews__item swiper-slide">
               <div class="reviews__card review">
                 <div class="review__image">
                   <picture>
                     <source type="image/webp"
                       srcset="./img/reviews-anna-orlova.webp 1x, ./img/reviews-anna-orlova@2x.webp 2x">
-                    <img src="./img/reviews-anna-orlova.png" alt="Портрет клиента Якова." width="80" height="80"
-                      loading="lazy" srcset="./img/reviews-anna-orlova@2x.png 2x">
+                    <img src="./img/reviews-anna-orlova.png" alt="Фото клиентки Дарьи Ставрович." width="80" height="80"
+                      srcset="./img/reviews-anna-orlova@2x.png 2x" loading="lazy">
                   </picture>
                 </div>
                 <h3>Дарья Ставрович</h3>
@@ -671,15 +670,14 @@
                   уровне!&raquo;</p>
               </div>
             </div>
-
             <div class="reviews__item swiper-slide">
               <div class="reviews__card review">
                 <div class="review__image">
                   <picture>
                     <source type="image/webp"
                       srcset="./img/reviews-anna-orlova.webp 1x, ./img/reviews-anna-orlova@2x.webp 2x">
-                    <img src="./img/reviews-anna-orlova.png" alt="Портрет клиентки Жужулы." width="80" height="80"
-                      loading="lazy" srcset="./img/reviews-anna-orlova@2x.png 2x">
+                    <img src="./img/reviews-anna-orlova.png" alt="Фото клиентки Ольги Дворецкой." width="80" height="80"
+                      srcset="./img/reviews-anna-orlova@2x.png 2x" loading="lazy">
                   </picture>
                 </div>
                 <h3>Ольга Дворецкая</h3>
@@ -687,7 +685,6 @@
                   обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&raquo;</p>
               </div>
             </div>
-
           </div>
           <button class="reviews__button reviews__button--prev swiper-button-prev" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
@@ -695,7 +692,6 @@
               <use xlink:href="img/sprite.svg#arrow-right"></use>
             </svg>
           </button>
-
           <button class="reviews__button reviews__button--next swiper-button-next" type="button">
             <span class="visually-hidden">Следующий отзыв</span>
             <svg width="16" height="32" xmlns="http://www.w3.org/2000/svg">
@@ -710,17 +706,18 @@
           <section class="lesson-form">
             <h2 class="lesson-form__title">Бесплатное занятие</h2>
             <div class="lesson-form__form" data-form-validate data-callback="base">
-            <form method="post" action="https://echo.htmlacademy.ru/" autocomplete="off">
-              <label data-on-input-validate data-validate-type="text" data-limitation="name"
-              data-message-base="Поле обязательно к заполнению" data-required>
-                <input type="text" name="name" id="name" placeholder="Имя" aria-label="Ваше имя" required>
-              </label>
-              <label data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
-              data-required>
-                <input type="tel" name="phone" id="phone" placeholder="Телефон" aria-label="Ваш номер телефона" required>
-              </label>
-              <button class="button" type="submit">отправить</button>
-            </form>
+              <form method="post" action="https://echo.htmlacademy.ru/" autocomplete="off">
+                <label data-on-input-validate data-validate-type="text" data-limitation="name"
+                  data-message-base="Поле обязательно к заполнению" data-required>
+                  <input type="text" name="name" id="name" placeholder="Имя" aria-label="Ваше имя" required>
+                </label>
+                <label data-on-input-validate data-validate-type="phone"
+                  data-message-base="Поле обязательно к заполнению" data-required>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" aria-label="Ваш номер телефона"
+                    required>
+                </label>
+                <button class="button" type="submit">отправить</button>
+              </form>
             </div>
           </section>
 
@@ -747,39 +744,38 @@
           </section>
         </div>
       </div>
-
     </main>
 
     <footer class="footer">
       <div class="container">
         <nav class="footer__nav nav">
-          <h2 class="visually-hidden">Меню навигации по сайту</h2>
+          <h2 class="visually-hidden">Меню навигации сайта</h2>
           <ul class="nav__list">
             <li class="nav__logo">
               <a class="nav__logo-link" href="index.html">
                 <svg width="88" height="32" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#logo"></use>
                 </svg>
+                <span class="visually-hidden">Логотип SUPERGYM.</span>
               </a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Услуги</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Абонементы</a>
+              <a class="nav__link" href="#subscriptions">Абонементы</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Акции</a>
+              <a class="nav__link" href="#promotion">Акции</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Тренеры</a>
+              <a class="nav__link" href="#trainers">Тренеры</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Расписание</a>
             </li>
           </ul>
         </nav>
-
         <div class="footer__social">
           <h2 class="visually-hidden">Наши социальные сети</h2>
           <ul class="footer__social-list social">
@@ -821,9 +817,6 @@
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
-
-
-
 </body>
 
 </html>
