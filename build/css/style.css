@@ -1222,6 +1222,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1622,10 +1623,10 @@ button,
 .custom-textarea label textarea:hover {
   border: 2px solid rgba(0, 0, 0, 0.5);
 }
-.custom-input label input:focus,
-.custom-input label textarea:focus,
-.custom-textarea label input:focus,
-.custom-textarea label textarea:focus {
+.custom-input label input.focus-visible:focus,
+.custom-input label textarea.focus-visible:focus,
+.custom-textarea label input.focus-visible:focus,
+.custom-textarea label textarea.focus-visible:focus {
   border: 2px solid rgba(0, 0, 0, 0.8);
 }
 @media screen and (max-width: 767px) {
@@ -1657,22 +1658,28 @@ button,
 .custom-textarea.is-invalid textarea {
   border: 2px solid #ff1553;
 }
-.custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
-.custom-input.is-invalid textarea:focus,
+.custom-input.is-invalid input:hover,
 .custom-input.is-invalid textarea:hover,
-.custom-textarea.is-invalid input:focus,
 .custom-textarea.is-invalid input:hover,
-.custom-textarea.is-invalid textarea:focus,
 .custom-textarea.is-invalid textarea:hover {
+  border: 2px solid rgba(255, 21, 83, 0.5);
+}
+.custom-input.is-invalid input.focus-visible:focus,
+.custom-input.is-invalid textarea.focus-visible:focus,
+.custom-textarea.is-invalid input.focus-visible:focus,
+.custom-textarea.is-invalid textarea.focus-visible:focus {
   border: 2px solid rgba(255, 21, 83, 0.5);
 }
 .custom-input.is-valid input,
 .custom-textarea.is-valid input {
   border: 2px solid #22b259;
 }
-.custom-input.is-valid input:focus, .custom-input.is-valid input:hover,
-.custom-textarea.is-valid input:focus,
+.custom-input.is-valid input:hover,
 .custom-textarea.is-valid input:hover {
+  border: 2px solid rgba(34, 178, 89, 0.5);
+}
+.custom-input.is-valid input.focus-visible:focus,
+.custom-textarea.is-valid input.focus-visible:focus {
   border: 2px solid rgba(34, 178, 89, 0.5);
 }
 .custom-input .input-message,
@@ -2138,7 +2145,7 @@ button,
 .header__link-logo:active {
   opacity: 0.5;
 }
-.header__link-logo:focus {
+.header__link-logo.focus-visible:focus {
   -webkit-box-shadow: 0 0 0 3px #bb740a;
           box-shadow: 0 0 0 3px #bb740a;
   outline: none;
@@ -2171,7 +2178,7 @@ button,
 .header__link:active {
   opacity: 0.5;
 }
-.header__link:focus {
+.header__link.focus-visible:focus {
   -webkit-box-shadow: 0 0 0 3px #bb740a;
           box-shadow: 0 0 0 3px #bb740a;
   outline: none;
@@ -2840,6 +2847,7 @@ button,
 
 .gym__image img {
   width: 100%;
+  background-color: #787878;
 }
 @media (max-width: 767px) {
   .gym__image {
@@ -2903,7 +2911,7 @@ button,
 .gym__video-button:active {
   opacity: 0.85;
 }
-.gym__video-button:focus {
+.gym__video-button.focus-visible:focus {
   -webkit-box-shadow: 0 0 0 3px #bb740a;
           box-shadow: 0 0 0 3px #bb740a;
   outline: none;
@@ -3357,7 +3365,6 @@ button,
 
 .button {
   position: relative;
-  z-index: 1;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -3391,6 +3398,7 @@ button,
   -moz-user-select: none;
    -ms-user-select: none;
        user-select: none;
+  z-index: 1;
 }
 .button::after {
   content: "";
@@ -3959,7 +3967,7 @@ button,
   -webkit-filter: drop-shadow(0 0 3px #0041ca);
           filter: drop-shadow(0 0 3px #0041ca);
 }
-.trainers__slider-button:focus {
+.trainers__slider-button.focus-visible:focus {
   -webkit-box-shadow: 0 0 0 3px #bb740a;
           box-shadow: 0 0 0 3px #bb740a;
   outline: none;
@@ -4005,24 +4013,44 @@ button,
   grid-template-columns: 1fr;
   background-color: #c5cbd6;
 }
-.trainers-card:hover .trainers-card__description, .trainers-card:focus .trainers-card__description, .trainers-card:focus-within .trainers-card__description {
+@media (min-width: 1200px) {
+  .trainers-card:hover .trainers-card__description, .trainers-card:focus .trainers-card__description, .trainers-card:focus-within .trainers-card__description {
+    height: 100%;
+    padding-bottom: 30px;
+    background-color: rgba(16, 38, 84, 0.89);
+  }
+  .trainers-card:hover .trainers-card__hidden-description, .trainers-card:focus .trainers-card__hidden-description, .trainers-card:focus-within .trainers-card__hidden-description {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.trainers-card--active .trainers-card__description {
   height: 100%;
   padding-bottom: 30px;
   background-color: rgba(16, 38, 84, 0.89);
 }
 @media (max-width: 1199px) {
-  .trainers-card:hover h3, .trainers-card:focus h3, .trainers-card:focus-within h3 {
+  .trainers-card--active h3 {
     -webkit-transform: translateX(-5px);
         -ms-transform: translateX(-5px);
             transform: translateX(-5px);
   }
 }
 @media (max-width: 767px) {
-  .trainers-card:hover h3, .trainers-card:focus h3, .trainers-card:focus-within h3 {
+  .trainers-card--active h3 {
     padding-left: 18px;
   }
 }
-.trainers-card:hover .trainers-card__hidden-description, .trainers-card:focus .trainers-card__hidden-description, .trainers-card:focus-within .trainers-card__hidden-description {
+.trainers-card--active .trainers-card__hidden-description {
   display: block;
   display: -webkit-box;
   display: -ms-flexbox;

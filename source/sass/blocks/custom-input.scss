@@ -44,7 +44,7 @@
         border: 2px solid rgba(#000000, 0.5);
       }
 
-      &:focus {
+      @include focus {
         border: 2px solid rgba(#000000, 0.8);
       }
     }
@@ -77,8 +77,11 @@
     textarea {
       border: 2px solid #ff1553;
 
-      &:focus,
       &:hover {
+        border: 2px solid rgba(#ff1553, 0.5);
+      }
+
+      @include focus {
         border: 2px solid rgba(#ff1553, 0.5);
       }
     }
@@ -88,8 +91,11 @@
     input {
       border: 2px solid #22b259;
 
-      &:focus,
       &:hover {
+        border: 2px solid rgba(#22b259, 0.5);
+      }
+
+      @include focus {
         border: 2px solid rgba(#22b259, 0.5);
       }
     }

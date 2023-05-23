@@ -6,9 +6,26 @@
   grid-template-columns: 1fr;
   background-color: $color-link-water;
 
-  &:hover,
-  &:focus,
-  &:focus-within {
+  @media (min-width: ($vp-1200)) {
+    &:hover,
+    &:focus,
+    &:focus-within {
+      .trainers-card__description {
+        height: 100%;
+        padding-bottom: 30px;
+        background-color: rgba($color-sapphire, 0.89);
+      }
+
+      .trainers-card__hidden-description {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  &--active {
     .trainers-card__description {
       height: 100%;
       padding-bottom: 30px;
