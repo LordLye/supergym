@@ -24,31 +24,6 @@
       }
     }
   }
-
-  &--active {
-    .trainers-card__description {
-      height: 100%;
-      padding-bottom: 30px;
-      background-color: rgba($color-sapphire, 0.89);
-    }
-
-    h3 {
-      @include vp-1199 {
-        transform: translateX(-5px);
-      }
-
-      @include vp-767 {
-        padding-left: 18px;
-      }
-    }
-
-    .trainers-card__hidden-description {
-      display: block;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
 }
 
 .trainers-card__image {
@@ -101,7 +76,7 @@
     text-align: center;
 
     @include vp-1199 {
-      transform: translateX(5px);
+      transform: translate(5px, -2px);
     }
   }
 }
@@ -168,5 +143,30 @@
       background-color: $color-default-white;
       border-radius: 50%;
     }
+  }
+}
+
+.trainers-card--active {
+  .trainers-card__description {
+    height: 100%;
+    padding-bottom: 30px;
+    background-color: rgba($color-sapphire, 0.89);
+  }
+
+  h3 {
+    @include vp-1199 {
+      transform: translate(-4px,-1px);
+    }
+
+    @include vp-767 {
+      padding-left: 18px;
+    }
+  }
+
+  .trainers-card__hidden-description {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

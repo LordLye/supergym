@@ -24,6 +24,10 @@
     padding-left: 4px;
     margin: 0;
 
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+
     @include vp-1199 {
       font-size: 42px;
       line-height: 50px;

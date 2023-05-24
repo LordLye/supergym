@@ -38,7 +38,7 @@
 
 .promotion__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 48.3% 48.3%;
   grid-auto-flow: dense;
   gap: 40px;
   margin: 0;
@@ -46,6 +46,7 @@
   list-style-type: none;
 
   @include vp-1199 {
+    grid-template-columns: 47.8% 47.8%;
     gap: 30px;
   }
 
@@ -68,6 +69,7 @@
 
   @include vp-1199 {
     min-height: 210px;
+    width: 100%;
   }
 
   @include vp-767 {
@@ -114,6 +116,10 @@
     color: inherit;
     transform: translate(-5px, 4px);
 
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
     @include vp-1199 {
       transform: translate(-5px, 3px);
     }
@@ -156,7 +162,7 @@
     padding: 0;
     grid-row: span 2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 1fr;
     border: none;
 
     @include vp-1199 {
@@ -182,6 +188,7 @@
   padding-top: 40px;
   background-color: $color-torch-red;
   color: $color-default-white;
+  width: 100%;
 
   @include vp-767 {
     align-items: center;
@@ -195,13 +202,13 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 110%;
-
-    @include vp-767 {
-      text-align: center;
-    }
+    width: 74.22%;
 
     @include vp-767 {
       margin-bottom: 12px;
+      text-align: center;
+      max-width: 190px;
+      overflow: hidden;
     }
   }
 
@@ -210,6 +217,13 @@
     font-weight: 700;
     font-size: 70px;
     line-height: 105%;
+    width: 100%;
+    min-width: 142px;
+
+    @include vp-767 {
+      max-width: 190px;
+      overflow: hidden;
+    }
   }
 
   p {
@@ -219,6 +233,15 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
+    max-width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+
+      @include vp-767 {
+        margin-bottom: 20px;
+      }
+    }
 
     @include vp-1199 {
       margin-bottom: auto;
@@ -233,6 +256,7 @@
     display: inline-block;
     font-size: 14px;
     line-height: 16px;
+    margin-top: auto;
 
     &::after {
       background-color: $color-default-white;

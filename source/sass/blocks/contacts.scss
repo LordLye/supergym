@@ -47,7 +47,7 @@
   padding: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1.1fr 37.19%;
   grid-auto-flow: dense;
   column-gap: 21.9%;
   row-gap: 10px;
@@ -106,6 +106,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
+    max-width: 250px;
 
     @include vp-1199 {
       font-size: 20px;
@@ -119,11 +120,13 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    max-width: 200px;
 
     @include vp-1199 {
       font-size: 18px;
       line-height: 27px;
       padding-top: 5px;
+      max-width: 280px;
     }
   }
 
@@ -136,6 +139,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    max-width: 250px;
 
     @include vp-1199 {
       font-size: 18px;

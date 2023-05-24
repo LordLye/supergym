@@ -23,7 +23,7 @@
     column-gap: 10px;
     row-gap: 13px;
     width: 100%;
-    padding: 40px 25px 27px 25px;
+    padding: 40px 25px 30px 25px;
   }
 
   h3 {
@@ -32,6 +32,8 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
+    max-height: 30px;
+    overflow: hidden;
 
     @include vp-767 {
       padding-top: 7px;
