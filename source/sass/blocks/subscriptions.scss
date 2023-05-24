@@ -21,7 +21,7 @@
   margin: 0;
   text-align: center;
 
-  &:not(:last-child) {
+  &:not(:last-of-type) {
     margin-bottom: 10px;
   }
 

@@ -38,7 +38,7 @@
 
 .promotion__list {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 48.3% 48.3%;
   grid-auto-flow: dense;
   gap: 40px;
   margin: 0;
@@ -46,6 +46,7 @@
   list-style-type: none;
 
   @include vp-1199 {
+    grid-template-columns: 47.8% 47.8%;
     gap: 30px;
   }
 
@@ -236,6 +237,10 @@
 
     &:not(:last-child) {
       margin-bottom: 10px;
+
+      @include vp-767 {
+        margin-bottom: 20px;
+      }
     }
 
     @include vp-1199 {
@@ -251,6 +256,7 @@
     display: inline-block;
     font-size: 14px;
     line-height: 16px;
+    margin-top: auto;
 
     &::after {
       background-color: $color-default-white;

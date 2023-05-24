@@ -25,6 +25,7 @@
   row-gap: 17px;
 
   @include vp-1199 {
+    grid-template-columns: minmax(120px, 35.8%) 62.2%;
     place-self: start end;
     width: 100%;
     min-width: 324px;
@@ -56,7 +57,7 @@
     color: $color-default-white;
 
     @include vp-1199 {
-      padding-right: 5px;
+      padding-right: 1px;
       font-size: 34px;
       line-height: 41px;
       max-width: 100%;
@@ -92,6 +93,7 @@
       line-height: 86px;
       text-transform: none;
       max-width: 100%;
+      padding-left: 18px;
     }
 
     @include vp-767 {
@@ -105,13 +107,13 @@
     place-self: center end;
     margin: 0;
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 26px;
     list-style-type: none;
     color: $color-default-white;
     transform: translateX(-10px);
 
     @include vp-1199 {
-      padding-bottom: 40px;
+      padding-bottom: 32px;
       transform: translateX(-8px);
     }
 

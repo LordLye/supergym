@@ -46,6 +46,7 @@
 
   @include vp-1199 {
     padding-bottom: 18px;
+    padding-top: 18px;
   }
 
   @include vp-767 {
@@ -64,6 +65,7 @@
   overflow: hidden;
 
   @include vp-1199 {
+    grid-template-rows: minmax(100px, 0fr) auto auto;
     row-gap: 0;
     column-gap: 22px;
   }
@@ -104,6 +106,8 @@
 
     @include vp-1199 {
       font-size: 12px;
+      padding-left: 0;
+      transform: translateY(3px);
     }
 
     @include vp-767 {
@@ -119,6 +123,10 @@
     padding: 0;
     overflow: hidden;
     transform: translateY(-5px);
+
+    @include vp-1199 {
+      transform: translateY(-7px);
+    }
   }
 
   dt {
@@ -154,6 +162,10 @@
       width: 100%;
       height: 1px;
       background-color: $color-default-white;
+
+      @include vp-1199 {
+        top: -2px;
+      }
     }
   }
 
@@ -181,6 +193,7 @@
       margin-left: 4px;
       font-size: 10px;
       line-height: 12px;
+      width: 70%;
     }
   }
 }
@@ -191,7 +204,7 @@
   flex-direction: column;
 
   @include vp-1199 {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
 
   &:last-of-type {
@@ -201,13 +214,33 @@
   &:nth-child(1n) {
     & dd {
       max-width: 120px;
-      width: 100%;
+      width: 74%;
+
+      @include vp-1199 {
+        transform: translateY(-2px);
+      }
+
+      @include vp-767 {
+        transform: translate(1px, -4px);
+      }
     }
   }
 
   &:nth-child(2n) {
+    @include vp-1199 {
+      transform: translateY(-7px);
+    }
+
     & dd {
       width: 100%;
+
+      @include vp-1199 {
+        transform: translateY(-2px);
+      }
+
+      @include vp-767 {
+        transform: translateY(-4px);
+      }
     }
 
     span {
@@ -225,7 +258,7 @@
   max-width: 348px;
 
   @include vp-1199 {
-    margin-top: 27px;
+    margin-top: 30px;
     padding: 15px;
     font-size: 10px;
     line-height: 12px;

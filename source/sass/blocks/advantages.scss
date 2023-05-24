@@ -114,6 +114,10 @@
 
   div {
     width: 58%;
+
+    @include vp-767 {
+      width: 99%;
+    }
   }
 
   dl {
@@ -122,16 +126,15 @@
     padding: 0;
     width: 32.36%;
     min-width: 108px;
-    overflow: scroll;
     -ms-overflow-style: none;
-      scrollbar-width: none;
+    scrollbar-width: none;
 
-      &::-webkit-scrollbar {
-        display: none;
-      }
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     @include vp-1199 {
-      margin-right: 29px;
+      margin-right: 10px;
     }
 
     @include vp-767 {
@@ -155,6 +158,7 @@
     background-clip: text;
     color: transparent;
     width: 100%;
+    word-break: break-all;
 
     @include vp-1199 {
       font-size: 58px;
@@ -252,9 +256,13 @@
 
   &:nth-child(2n) {
     & dl {
-      margin-right: 27px;
+      margin-right: 29px;
       min-width: 72px;
       width: 20%;
+
+      @include vp-1199 {
+        margin-right: 15px;
+      }
 
       @include vp-767 {
         margin-right: 0;
@@ -270,7 +278,11 @@
     }
 
     & div {
-     width: 70%;
+      width: 71%;
+
+      @include vp-767 {
+        width: 99%;
+      }
     }
   }
 
@@ -279,6 +291,10 @@
       margin-right: 30px;
       min-width: 108px;
 
+      @include vp-1199 {
+        margin-right: 10px;
+      }
+
       @include vp-767 {
         margin-right: 0;
       }
@@ -286,7 +302,11 @@
 
     & div {
       width: 70%;
-     }
+
+      @include vp-767 {
+        width: 99%;
+      }
+    }
 
     @include vp-767 {
       margin-right: 0;
@@ -295,9 +315,13 @@
 
   &:nth-child(5n) {
     & dl {
-      margin-right: 26px;
+      margin-right: 29px;
       min-width: 72px;
       width: 20%;
+
+      @include vp-1199 {
+        margin-right: 15px;
+      }
 
       @include vp-767 {
         margin-right: 0;
@@ -305,8 +329,12 @@
     }
 
     & div {
-      width: 70%;
-     }
+      width: 71%;
+
+      @include vp-767 {
+        width: 99%;
+      }
+    }
 
     @include vp-767 {
       margin-right: 0;
