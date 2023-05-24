@@ -7,4 +7,6 @@ function active() {
   }
 }
 
-trainerCard.forEach((el) => el.addEventListener('click', active));
+if (trainerCard) {
+  trainerCard.forEach((el) => el.addEventListener('click', active));
+}
