@@ -57,7 +57,7 @@
 }
 
 .header__logo {
-@include vp-1199 {
+  @include vp-1199 {
     width: 82px;
     height: 17px;
   }
@@ -97,7 +97,7 @@
   }
 
   @include vp-1199 {
-    font-family: 'Alumni Sans';
+    font-family: $ff-Alumni-Sans;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
