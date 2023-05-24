@@ -74,9 +74,11 @@
   align-items: flex-start;
   margin: 0;
   padding: 0 10px 0 25px;
+  max-width: 368px;
 
   @include vp-1199 {
     padding: 0;
+    max-width: 510px;
 
     &:nth-child(4n) {
       & p {
@@ -110,10 +112,24 @@
     }
   }
 
+  div {
+    width: 100%;
+  }
+
   dl {
     margin: 0;
     margin-right: 30px;
     padding: 0;
+    max-width: 110px;
+    width: 32.36%;
+    min-width: 108px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
     @include vp-1199 {
       margin-right: 29px;
@@ -125,6 +141,8 @@
       align-items: center;
       margin-right: 0;
       margin-bottom: 1px;
+      width: 80%;
+      text-align: center;
     }
   }
 
@@ -137,6 +155,7 @@
     background: linear-gradient(142.51deg, $color-crimson 0%, $color-cobalt-number 87.33%);
     background-clip: text;
     color: transparent;
+    width: 100%;
 
     @include vp-1199 {
       font-size: 58px;
@@ -150,7 +169,7 @@
     font-size: 14px;
     line-height: 150%;
     color: $color-persian-blue;
-
+    width: 100%;
     transform: translateY(-4px);
   }
 
@@ -223,19 +242,58 @@
       max-width: 70%;
 
       & p {
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
       }
     }
   }
 
   &:nth-child(2n) {
+    & dl {
+      margin-right: 26px;
+      min-width: 72px;
+
+      @include vp-767 {
+        margin-right: 0;
+      }
+    }
+
     @include vp-1199 {
       max-width: 98.5%;
     }
 
     @include vp-767 {
       max-width: 72%;
+    }
+  }
+
+  &:nth-child(4n) {
+    & dl {
+      margin-right: 30px;
+      min-width: 108px;
+
+      @include vp-767 {
+        margin-right: 0;
+      }
+    }
+
+    @include vp-767 {
+      margin-right: 0;
+    }
+  }
+
+  &:nth-child(5n) {
+    & dl {
+      margin-right: 26px;
+      min-width: 72px;
+
+      @include vp-767 {
+        margin-right: 0;
+      }
+    }
+
+    @include vp-767 {
+      margin-right: 0;
     }
   }
 
@@ -251,6 +309,7 @@
     padding: 30px;
     background-color: $color-resolution-blue;
     color: $color-default-white;
+    width: 100%;
 
     @include vp-1199 {
       grid-column: 1/-1;
@@ -284,6 +343,9 @@
       align-items: center;
       margin-right: 0;
       margin-bottom: 25px;
+      max-width: 175px;
+      width: 100%;
+      text-align: center;
 
       @include vp-1199 {
         margin-right: 0;
@@ -301,7 +363,7 @@
       line-height: 110%;
       color: inherit;
       background: none;
-
+      text-align: center;
       transform: translate(-2px, -2px);
 
       @include vp-1199 {
@@ -318,7 +380,8 @@
       font-size: 26px;
       line-height: 150%;
       color: inherit;
-
+      max-width: 175px;
+      width: 100%;
       transform: translateY(-5px);
 
       @include vp-1199 {

@@ -44,6 +44,10 @@
   padding: 20px 0;
   background-color: $color-torch-red-darker;
 
+  @include vp-1199 {
+    padding-bottom: 18px;
+  }
+
   @include vp-767 {
     min-height: 292px;
   }
@@ -57,6 +61,7 @@
   column-gap: 40px;
   row-gap: 10px;
   color: $color-default-white;
+  overflow: hidden;
 
   @include vp-1199 {
     row-gap: 0;
@@ -74,13 +79,16 @@
     text-align: center;
     letter-spacing: 0.03em;
     transform: translateX(-3px);
+    max-width: 220px;
+    width: 100%;
+    overflow: hidden;
 
     @include vp-1199 {
-      max-width: 120px;
       margin-left: 10px;
       font-size: 48px;
       line-height: 46px;
       text-align: left;
+      max-width: 120px;
     }
   }
 
@@ -92,6 +100,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
+    max-width: 360px;
 
     @include vp-1199 {
       font-size: 12px;
@@ -108,7 +117,7 @@
     place-self: start center;
     margin: 0;
     padding: 0;
-
+    overflow: hidden;
     transform: translateY(-5px);
   }
 
@@ -118,7 +127,8 @@
     margin-bottom: 3px;
     padding: 0;
     font-size: 18px;
-    line-height: 150%;
+    line-height: 27px;
+    max-width: 100px;
 
     @include vp-1199 {
       font-size: 12px;
@@ -133,6 +143,7 @@
     padding: 0;
     display: flex;
     align-items: center;
+    max-width: 150px;
 
     &::after {
       content: "";
@@ -150,6 +161,8 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
+    max-width: 50px;
+    overflow: hidden;
 
     @include vp-1199 {
       font-size: 24px;
@@ -160,7 +173,9 @@
   small {
     margin-left: 7px;
     font-size: 14px;
-    line-height: 150%;
+    line-height: 21px;
+    max-width: 80px;
+    width: 40%;
 
     @include vp-1199 {
       margin-left: 4px;
@@ -182,6 +197,23 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  &:nth-child(1n) {
+    & dd {
+      max-width: 120px;
+      width: 100%;
+    }
+  }
+
+  &:nth-child(2n) {
+    & dd {
+      width: 100%;
+    }
+
+    span {
+      max-width: 100px;
+    }
+  }
 }
 
 .super-games__button {
@@ -190,13 +222,15 @@
   padding: 28px;
   place-self: start center;
   width: 100%;
+  max-width: 348px;
 
   @include vp-1199 {
     margin-top: 27px;
     padding: 15px;
     font-size: 10px;
     line-height: 12px;
-
+    max-width: none;
+    margin-bottom: 2px;
     transform: translateY(2px);
 
     &::after {

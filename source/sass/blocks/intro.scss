@@ -21,7 +21,7 @@
   place-self: start start;
   padding-top: 87px;
   display: grid;
-  grid-template-columns: minmax(120px, 1fr) 1.8fr;
+  grid-template-columns: minmax(120px, 35.8%) 64.2%;
   row-gap: 17px;
 
   @include vp-1199 {
@@ -59,6 +59,7 @@
       padding-right: 5px;
       font-size: 34px;
       line-height: 41px;
+      max-width: 100%;
     }
 
     @include vp-767 {
@@ -73,6 +74,7 @@
     grid-row: 2/3;
     place-self: start end;
     margin: 0;
+        padding-left: 10px;
     font-family: $ff-Alumni-Sans;
     font-style: normal;
     font-weight: 600;
@@ -89,6 +91,7 @@
       font-size: 72px;
       line-height: 86px;
       text-transform: none;
+      max-width: 100%;
     }
 
     @include vp-767 {
@@ -187,7 +190,6 @@
 
   img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     background-color: $color-midnight-express;
   }

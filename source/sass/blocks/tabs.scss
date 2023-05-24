@@ -37,6 +37,7 @@
 }
 
 .tabs__control {
+  max-width: 200px;
   position: relative;
   flex-shrink: 0;
   display: block;
@@ -56,6 +57,7 @@
     font-size: 18px;
     line-height: 27px;
     margin-right: 54px;
+    max-width: 100px;
   }
 
   @include vp-767 {
