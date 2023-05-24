@@ -1,7 +1,7 @@
 .lesson-form {
   box-sizing: border-box;
   width: 75%;
-  padding: 56px 23px 30px 0px;
+  padding: 56px 23px 30px 0;
   background-color: $color-sapphire;
   color: $color-default-white;
 
@@ -16,7 +16,7 @@
   }
 
   h2 {
-    font-family: 'Alumni Sans';
+    font-family: $ff-Alumni-Sans;
     letter-spacing: 0.03em;
     font-weight: 800;
     font-size: 54px;
@@ -82,23 +82,24 @@
     }
   }
 
+  & span.input-message {
+    position: absolute;
+    font-size: 11px;
+    line-height: 16px;
+    color: $color-crimson;
+    overflow: scroll;
+    max-height: 21px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-top: 2px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
   label {
     position: relative;
-
-    & span.input-message {
-      position: absolute;
-      font-size: 12px;
-      line-height: 16px;
-      color: $color-crimson;
-      overflow: scroll;
-      max-height: 18px;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-
-      &::-webkit-scrollbar {
-        display: none;
-      }
-    }
   }
 
   input {
@@ -120,7 +121,7 @@
       color: #ffffff;
     }
 
-    &:focus+span {
+    &:focus + span {
       opacity: 1;
     }
 

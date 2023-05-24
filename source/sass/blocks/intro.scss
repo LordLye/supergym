@@ -75,7 +75,7 @@
     grid-row: 2/3;
     place-self: start end;
     margin: 0;
-        padding-left: 10px;
+    padding-left: 10px;
     font-family: $ff-Alumni-Sans;
     font-style: normal;
     font-weight: 600;
@@ -88,7 +88,6 @@
     color: $color-default-white;
 
     @include vp-1199 {
-      max-width: 346px;
       font-size: 72px;
       line-height: 86px;
       text-transform: none;
@@ -153,7 +152,7 @@
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-  grid-row:auto;
+  grid-row: auto;
 
   &:first-of-type {
     grid-row: 3/4;

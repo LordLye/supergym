@@ -17,7 +17,6 @@
       }
 
       .trainers-card__hidden-description {
-        display: block;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -155,7 +154,7 @@
 
   h3 {
     @include vp-1199 {
-      transform: translate(-4px,-1px);
+      transform: translate(-4px, -1px);
     }
 
     @include vp-767 {
@@ -164,7 +163,6 @@
   }
 
   .trainers-card__hidden-description {
-    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
