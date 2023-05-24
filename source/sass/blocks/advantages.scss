@@ -113,14 +113,13 @@
   }
 
   div {
-    width: 100%;
+    width: 58%;
   }
 
   dl {
     margin: 0;
     margin-right: 30px;
     padding: 0;
-    max-width: 110px;
     width: 32.36%;
     min-width: 108px;
     overflow: scroll;
@@ -180,7 +179,6 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 150%;
-
     transform: translateY(2px);
 
     @include vp-1199 {
@@ -201,6 +199,10 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 140%;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
 
     @include vp-767 {
       text-align: center;
@@ -250,8 +252,9 @@
 
   &:nth-child(2n) {
     & dl {
-      margin-right: 26px;
+      margin-right: 27px;
       min-width: 72px;
+      width: 20%;
 
       @include vp-767 {
         margin-right: 0;
@@ -265,6 +268,10 @@
     @include vp-767 {
       max-width: 72%;
     }
+
+    & div {
+     width: 70%;
+    }
   }
 
   &:nth-child(4n) {
@@ -277,6 +284,10 @@
       }
     }
 
+    & div {
+      width: 70%;
+     }
+
     @include vp-767 {
       margin-right: 0;
     }
@@ -286,11 +297,16 @@
     & dl {
       margin-right: 26px;
       min-width: 72px;
+      width: 20%;
 
       @include vp-767 {
         margin-right: 0;
       }
     }
+
+    & div {
+      width: 70%;
+     }
 
     @include vp-767 {
       margin-right: 0;

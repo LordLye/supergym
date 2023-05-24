@@ -115,6 +115,10 @@
     color: inherit;
     transform: translate(-5px, 4px);
 
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
     @include vp-1199 {
       transform: translate(-5px, 3px);
     }
@@ -229,6 +233,10 @@
     font-size: 18px;
     line-height: 140%;
     max-width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
 
     @include vp-1199 {
       margin-bottom: auto;

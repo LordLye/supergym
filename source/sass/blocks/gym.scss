@@ -1,6 +1,6 @@
 .gym {
   position: relative;
-  padding: 120px 0 235px 0;
+  padding: 120px 0 225px 0;
 
   @include vp-1199 {
     padding: 100px 0 183px 0;
@@ -92,9 +92,15 @@
   }
 
   & strong {
+    display: block;
+    margin: 0;
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
   & p {
@@ -139,6 +145,7 @@
 
 .gym__image {
   & img {
+    margin-bottom: 10px;
     width: 100%;
     background-color: $color-grey;
   }
