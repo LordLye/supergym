@@ -1478,7 +1478,6 @@ button,
   display: -ms-flexbox;
   display: flex;
   padding-right: 10px;
-  width: 50%;
 }
 @media (max-width: 1199px) {
   .header__link-logo {
@@ -2838,8 +2837,8 @@ button,
   display: none;
 }
 .button.focus-visible:focus {
-  -webkit-box-shadow: 0 0 0 3px #bb740a;
-          box-shadow: 0 0 0 3px #bb740a;
+  -webkit-box-shadow: inset 0 0 0 3px #bb740a;
+          box-shadow: inset 0 0 0 3px #bb740a;
   outline: none;
   color: #ffffff;
   background: -o-linear-gradient(352.95deg, #ff1553 17.6%, #003eb7 95.31%);
@@ -3263,17 +3262,6 @@ button,
   .super-games__button:hover:not(.focus-visible)::after {
     background-color: #ffffff;
   }
-}
-.super-games__button.focus-visible:focus {
-  color: #ffffff;
-  background: -o-linear-gradient(352.95deg, #ff1553 17.6%, #003eb7 95.31%);
-  background: linear-gradient(97.05deg, #ff1553 17.6%, #003eb7 95.31%);
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.super-games__button.focus-visible:focus::after {
-  background-color: #ffffff;
 }
 
 .trainers {
@@ -4485,13 +4473,16 @@ button,
   }
 }
 .promotion__item a.focus-visible:focus {
+  -webkit-box-shadow: inset 0 0 0 3px #bb740a;
+          box-shadow: inset 0 0 0 3px #bb740a;
+  outline: none;
   color: #ffffff;
   background: -o-linear-gradient(352.95deg, #ff1553 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ff1553 17.6%, #003eb7 95.31%);
-  outline: none;
+  border: none;
 }
 .promotion__item a.focus-visible:focus::after {
-  background-color: #ffffff;
+  display: none;
 }
 .promotion__item a:active {
   opacity: 0.5;

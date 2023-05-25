@@ -143,13 +143,25 @@
       }
     }
 
-    @include hover-focus {
+    @include hover {
       color: $color-default-white;
       background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
       outline: none;
 
       &::after {
         background-color: $color-default-white;
+      }
+    }
+
+    @include focus {
+      box-shadow: inset 0 0 0 3px $color-gamboge;
+      outline: none;
+      color: $color-default-white;
+      background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+      border: none;
+
+      &::after {
+        display: none;
       }
     }
 
