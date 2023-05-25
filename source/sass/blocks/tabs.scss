@@ -55,6 +55,7 @@
   line-height: 30px;
   color: rgba($color-sapphire, 0.5);
   cursor: pointer;
+  user-select: none;
 
   @include vp-1199 {
     font-size: 18px;

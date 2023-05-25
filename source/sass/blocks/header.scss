@@ -31,10 +31,12 @@
 
 .header__link-logo {
   display: flex;
-  padding-right: 10px;
+  margin-right: 40%;
+
 
   @include vp-1199 {
     padding-top: 6px;
+    margin-right: 20%;
   }
 
   @include vp-767 {

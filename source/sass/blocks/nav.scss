@@ -71,6 +71,7 @@
   line-height: 16px;
   padding-top: 3px;
   max-width: 100px;
+  user-select: none;
 
   @include vp-1199 {
     max-width: 80px;
