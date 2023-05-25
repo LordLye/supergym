@@ -46,7 +46,7 @@
 
   @include vp-1199 {
     padding-bottom: 18px;
-    padding-top: 18px;
+    padding-top: 21px;
   }
 
   @include vp-767 {
@@ -65,7 +65,7 @@
   overflow: hidden;
 
   @include vp-1199 {
-    grid-template-rows: minmax(100px, 0fr) auto auto;
+    grid-template-rows: minmax(100px, auto) auto auto;
     row-gap: 0;
     column-gap: 22px;
   }
@@ -91,6 +91,8 @@
       line-height: 46px;
       text-align: left;
       max-width: 120px;
+      padding-right: 5px;
+      padding-top: 4px;
     }
   }
 
@@ -107,11 +109,12 @@
     @include vp-1199 {
       font-size: 12px;
       padding-left: 0;
-      transform: translateY(3px);
+      transform: translateY(-3px);
     }
 
     @include vp-767 {
       padding-left: 0;
+      transform: translateY(-5px);
     }
   }
 
@@ -125,14 +128,13 @@
     transform: translateY(-5px);
 
     @include vp-1199 {
-      transform: translateY(-7px);
+      transform: translateY(0);
     }
   }
 
   dt {
     position: relative;
     margin: 0;
-    margin-bottom: 3px;
     padding: 0;
     font-size: 18px;
     line-height: 27px;
@@ -140,6 +142,7 @@
 
     @include vp-1199 {
       font-size: 12px;
+      line-height: 18px;
       margin-bottom: 0;
     }
   }
@@ -157,14 +160,19 @@
       content: "";
       position: absolute;
       left: 0;
-      top: 0;
+      top: 3px;
       display: block;
-      width: 100%;
+      width: 89%;
       height: 1px;
       background-color: $color-default-white;
 
       @include vp-1199 {
-        top: -2px;
+        width: 100%;
+        top: 0;
+      }
+
+      @include vp-767 {
+        top: 4px;
       }
     }
   }
@@ -172,13 +180,13 @@
   span {
     font-weight: 700;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 60px;
     max-width: 50px;
     overflow: hidden;
 
     @include vp-1199 {
       font-size: 24px;
-      line-height: 30px;
+      line-height: 36px;
     }
   }
 
@@ -188,23 +196,31 @@
     line-height: 21px;
     max-width: 80px;
     width: 40%;
+    align-self: flex-start;
+    margin-top: 8px;
 
     @include vp-1199 {
-      margin-left: 4px;
+      margin-left: 5px;
       font-size: 10px;
-      line-height: 12px;
+      line-height: 15px;
       width: 70%;
+      transform: translateY(-6px);
+    }
+
+    @include vp-767 {
+      transform: translateY(-3px);
     }
   }
 }
 
 .super-games__date {
-  margin-bottom: 15px;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
 
   @include vp-1199 {
-    margin-bottom: 3px;
+    margin-bottom: 0;
+    line-height: 18px;
   }
 
   &:last-of-type {
@@ -216,10 +232,6 @@
       max-width: 120px;
       width: 74%;
 
-      @include vp-1199 {
-        transform: translateY(-2px);
-      }
-
       @include vp-767 {
         transform: translate(1px, -4px);
       }
@@ -227,16 +239,18 @@
   }
 
   &:nth-child(2n) {
+    transform: translateY(8px);
+
     @include vp-1199 {
-      transform: translateY(-7px);
+      transform: translateY(-2px);
+    }
+
+    @include vp-767 {
+      transform: translateY(-4px);
     }
 
     & dd {
       width: 100%;
-
-      @include vp-1199 {
-        transform: translateY(-2px);
-      }
 
       @include vp-767 {
         transform: translateY(-4px);
@@ -274,14 +288,18 @@
     line-height: 12px;
     max-width: none;
     margin-bottom: 2px;
-    transform: translateY(2px);
+    transform: translateY(-3px);
 
     &::after {
       border-width: 2px;
     }
   }
 
-  @include hover-focus {
+  @include vp-767 {
+    transform: translateY(-5px);
+  }
+
+  @include hover {
     color: $color-default-white;
     background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
     outline: none;
