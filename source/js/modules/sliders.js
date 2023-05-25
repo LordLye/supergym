@@ -69,7 +69,7 @@ const initSliders = () => {
   }
 
   if (document.querySelector('.reviews__slider')) {
-    const reviewsSlider = new Swiper('.reviews__slider', {     // eslint-disable-line
+    const reviewsSlider = new Swiper('.reviews__slider', {
       direction: 'horizontal',
       loop: false,
       slidesPerView: 'auto',
@@ -81,6 +81,8 @@ const initSliders = () => {
         prevEl: '.reviews__button--prev',
       },
     });
+
+    reviewsSlider();
   }
 
   const notificationSpans = document.querySelectorAll('.swiper-notification');
