@@ -82,7 +82,7 @@ const initSliders = () => {
       },
     });
 
-    reviewsSlider();
+    reviewsSlider.loop = false;
   }
 
   const notificationSpans = document.querySelectorAll('.swiper-notification');
