@@ -8,5 +8,5 @@ function active() {
 }
 
 if (trainerCard) {
-  trainerCard.forEach((el) => el.addEventListener('click', active));
+  trainerCard.forEach((el) => el.addEventListener('click', active.call()));
 }
