@@ -479,10 +479,10 @@ template {
 
 /* Auto Height */
 
-.swiper-autoheight,
+/* .swiper-autoheight,
 .swiper-autoheight .swiper-slide {
   height: auto;
-}
+} */
 
 .swiper-autoheight .swiper-wrapper {
   -webkit-box-align: start;
@@ -3417,6 +3417,10 @@ button,
   display: grid;
   -ms-grid-columns: 80px 1fr;
   grid-template-columns: 80px 1fr;
+  -ms-grid-rows: -webkit-min-content auto;
+  -ms-grid-rows: min-content auto;
+  grid-template-rows: -webkit-min-content auto;
+  grid-template-rows: min-content auto;
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
@@ -3440,7 +3444,13 @@ button,
   font-size: 20px;
   line-height: 150%;
   max-height: 30px;
-  overflow: hidden;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.review h3::-webkit-scrollbar {
+  display: none;
 }
 
 .review p {
@@ -5296,6 +5306,8 @@ button,
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 28px 28px auto;
+    grid-template-rows: 28px 28px auto;
     -webkit-column-gap: 10px;
     -moz-column-gap: 10px;
     column-gap: 10px;
@@ -5308,6 +5320,8 @@ button,
     padding-top: 7px;
     padding-left: 6px;
     line-height: 130%;
+    max-height: 68px;
+    min-height: 68px;
   }
 
   .review p {
