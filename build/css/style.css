@@ -5035,7 +5035,7 @@ button,
   }
 
   .advantages {
-    padding: 38px 0 62px 0;
+    padding: 38px 0 63px 0;
   }
 
   .advantages .container {
@@ -5120,10 +5120,10 @@ button,
     -ms-grid-row-align: stretch;
     -ms-grid-column-align: stretch;
     place-self: stretch;
-    margin-top: 8px;
+    margin-top: 9px;
     margin-bottom: 5px;
     padding: 40px;
-    padding-bottom: 44px;
+    padding-bottom: 45px;
   }
 
   .advantages__item--center dl {
