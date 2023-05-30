@@ -33,11 +33,12 @@
   max-width: 364px;
 
   @include vp-1199 {
-    top: 587px;
+    top: 68.82%;
     width: 34.64%;
     left: 0;
     right: 0;
     margin: 0 auto;
+    max-width: none;
   }
 
   @include vp-767 {
@@ -47,7 +48,7 @@
   }
 
   @media (min-width: 1366px) {
-    left: calc(50% - 140px);
+    left: calc(50% - 143px);
   }
 }
 

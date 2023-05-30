@@ -23,6 +23,7 @@
   display: grid;
   grid-template-columns: minmax(120px, 35.8%) 64.2%;
   row-gap: 17px;
+  padding-bottom: 20px;
 
   @include vp-1199 {
     grid-template-columns: minmax(120px, 35.8%) 62.2%;
@@ -38,7 +39,7 @@
     max-width: none;
     place-self: stretch;
     grid-template-columns: auto 1fr auto;
-    padding-top: 49px;
+    padding-top: 68px;
     row-gap: 13px;
   }
 
@@ -162,7 +163,7 @@
   @include vp-1199 {
     width: 92%;
     margin-top: 28px;
-    padding: 20px 30px;
+    padding: 24px 30px;
     transform: translateX(2px);
   }
 

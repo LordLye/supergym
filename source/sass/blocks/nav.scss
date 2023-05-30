@@ -1,5 +1,6 @@
 .nav {
-  width: 68.63%;
+  width: 68.8%;
+  position: relative;
 
   @include vp-1199 {
     width: 78.91%;
@@ -17,6 +18,8 @@
   flex-wrap: wrap;
   gap: 20px 5.15%;
   width: 100%;
+  padding-left: 97px;
+  justify-content: end;
 
   @include vp-1199 {
     gap: 10px 5.71%;
@@ -27,15 +30,20 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 21px;
     column-gap: 76px;
+    padding-left: 0;
   }
 }
 
 .nav__logo {
-  margin-right: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
 
   @include vp-767 {
     margin: 3px 0 auto 0;
     order: -10;
+    position: relative;
+    left: auto;
   }
 }
 
@@ -72,6 +80,7 @@
   padding-top: 3px;
   max-width: 100px;
   user-select: none;
+  margin-right: 4px;
 
   @include vp-1199 {
     max-width: 80px;
