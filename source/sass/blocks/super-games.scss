@@ -280,6 +280,10 @@
   place-self: start center;
   width: 100%;
   max-width: 348px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include vp-1199 {
     margin-top: 30px;

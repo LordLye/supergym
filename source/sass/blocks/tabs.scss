@@ -22,7 +22,7 @@
     margin-bottom: 41px;
     display: grid;
     grid-template-columns: 29% 30% 30%;
-    column-gap: 5%;
+    column-gap: 5.5%;
     row-gap: 10px;
   }
 
@@ -68,23 +68,20 @@
     width: 100%;
     font-size: 16px;
     line-height: 24px;
-    text-align: start;
+    text-align: center;
     max-width: 100%;
     margin-right: 0;
 
     &:first-child {
       width: 71%;
-      text-align: start;
     }
 
     &:nth-child(3n+2) {
       width: 100%;
-      text-align: center;
       transform: translateX(-10px);
     }
 
     &:nth-child(3n) {
-      text-align: end;
       width: 100%;
     }
   }
@@ -121,7 +118,7 @@
       left: 0;
       bottom: -1px;
       display: block;
-      width: 99%;
+      width: 100%;
       height: 2px;
       background-color: $color-crimson;
 

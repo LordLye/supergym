@@ -23,6 +23,11 @@
       }
     }
   }
+
+  @include focus {
+    box-shadow: 0 0 0 5px $color-gamboge;
+    outline: none;
+  }
 }
 
 .trainers-card__image {

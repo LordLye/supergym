@@ -6,7 +6,6 @@
   row-gap: 13px;
   box-sizing: border-box;
   width: 560px;
-  height: 100%;
   margin: 0 auto;
   padding: 55px 60px 50px 62px;
   background-color: $color-resolution-blue;
@@ -15,7 +14,7 @@
 
   @include vp-1199 {
     width: 93%;
-    padding: 54px 62px 50px 65px;
+    padding: 54px 62px 52px 65px;
   }
 
   @include vp-767 {
@@ -40,11 +39,14 @@
     scrollbar-width: none;
 
     @include vp-767 {
-      padding-top: 7px;
+      padding-top: 0;
       padding-left: 6px;
       line-height: 130%;
       max-height: 68px;
       min-height: 68px;
+      grid-row: span 2;
+      display: flex;
+      align-items: center;
     }
 
     &::-webkit-scrollbar {
@@ -53,7 +55,7 @@
   }
 
   .review__text {
-    height: 118px;
+    max-height: 92px;
     overflow: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -69,7 +71,8 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      height: 177px;
+      max-height: 182px;
+      height: auto;
     }
   }
 
