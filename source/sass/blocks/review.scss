@@ -18,9 +18,9 @@
   }
 
   @include vp-767 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 28px 28px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-gap: 10px;
     row-gap: 13px;
     width: 100%;
@@ -33,20 +33,16 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
-    max-height: 30px;
-    overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 
     @include vp-767 {
       padding-top: 0;
       padding-left: 6px;
       line-height: 130%;
-      max-height: 68px;
       min-height: 68px;
       grid-row: span 2;
       display: flex;
       align-items: center;
+      max-width: 39%;
     }
 
     &::-webkit-scrollbar {
@@ -56,10 +52,10 @@
 
   .review__text {
     max-height: 92px;
+    grid-column: 2;
     overflow: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    grid-column: 2;
 
     &::-webkit-scrollbar {
       display: none;
@@ -100,6 +96,7 @@
   border-radius: 50%;
   overflow: hidden;
   background-color: $color-shuttle-grey;
+  flex-shrink: 0;
 
   @include vp-767 {
     place-self: start end;

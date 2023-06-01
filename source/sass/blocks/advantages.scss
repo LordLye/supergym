@@ -25,7 +25,7 @@
     font-size: 54px;
     line-height: 65px;
     letter-spacing: 0.03em;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
     text-align: center;
     transform: translateX(5px);
 
@@ -193,28 +193,29 @@
       background: linear-gradient(127.61deg, $color-crimson 0%, $color-cobalt-number 45.58%);
       background-clip: text;
     }
-
-    &::after {
-      left: 5px;
-    }
   }
 
-  &:nth-child(-n+2) {
+  &:nth-child(n+4) {
     &::after {
       content: "";
       position: absolute;
-      right: 5px;
-      bottom: -74px;
+      left: 5px;
+      top: -74px;
       display: block;
       width: 92%;
       height: 2px;
       background-color: $color-crimson;
       opacity: 0.2;
 
-
       @include vp-1199 {
         display: none;
       }
+    }
+  }
+
+  &:nth-child(5n) {
+    &::after {
+      left: 27px;
     }
   }
 
@@ -247,7 +248,7 @@
       max-width: 500px;
       width: 57.5%;
       padding: 30px;
-      padding-bottom: 45px;
+      padding-bottom: 37px;
       margin-bottom: 2px;
       justify-content: flex-start;
     }
@@ -329,6 +330,7 @@
         margin-bottom: 0;
         font-size: 16px;
         max-width: 180px;
+        line-height: 150%;
       }
     }
   }
