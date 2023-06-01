@@ -18,7 +18,7 @@
     font-size: 54px;
     line-height: 65px;
     letter-spacing: 0.03em;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
     text-align: center;
 
     @include vp-1199 {
@@ -31,7 +31,7 @@
     @include vp-767 {
       font-size: 32px;
       line-height: 38px;
-      margin-bottom: 42px;
+      margin-bottom: 40px;
     }
   }
 }
@@ -115,6 +115,7 @@
     text-transform: uppercase;
     color: inherit;
     transform: translate(-5px, 4px);
+    user-select: none;
 
     &:not(:last-child) {
       margin-bottom: 10px;
